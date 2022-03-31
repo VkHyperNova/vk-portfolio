@@ -1,7 +1,10 @@
 import React from 'react'
 import './testimonials.css'
-import AVTR1 from '../../assets/client_avatar1.jpg'
-import AVTR2 from '../../assets/mina.jpg'
+import AVTR1 from '../../assets/avatar1.jpg'
+import AVTR2 from '../../assets/avatar2.jpg'
+import AVTR3 from '../../assets/avatar3.jpg'
+import AVTR4 from '../../assets/avatar4.jpg'
+
 
 
 /* SWIPER */
@@ -14,7 +17,7 @@ import "swiper/css/pagination";
 const data = [
   {
     avatar: AVTR1,
-    name: 'HOT CHICK',
+    name: 'Woman',
     review: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, magni! Error nam soluta iure dolorem, ducimus distinctio reiciendis deserunt, suscipit laudantium et sunt quasi impedit accusamus architecto officia porro aspernatur.'
   },
   {
@@ -23,12 +26,12 @@ const data = [
     review: 'asdmi, ur.'
   },
   {
-    avatar: AVTR1,
+    avatar: AVTR3,
     name: 'HOT CHICK',
     review: 'Lorem ipsum dolor soluta iure dolonctio reiciendis deserunt, suscipit laudantium et sunt quasi impedit accusamus architecto officia porro aspernatur.'
   },
   {
-    avatar: AVTR1,
+    avatar: AVTR4,
     name: 'HOT CHICK',
     review: 'Lorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, ameorem ipsum dolor sit, amet consece dolorem, duciLorem ipsum dolor sit, amet consece dolorem, duciLorem ipsum dolor sit, amet consece dolorem, duciLorem ipsum dolor sit, amet consece dolorem, duciLorem ipsum dolor sit, amet consece dolorem, ducimus distinctio reiciendis deserunt, suscipit laudantium et sunt quasi impedit accusamus architecto officia porro aspernatur.'
   }
