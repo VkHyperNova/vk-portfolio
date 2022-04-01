@@ -6,15 +6,21 @@
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    border-radius: 1rem;
+    background: var(--color-bg-variant);
     display: grid;
     place-items: center;
+    transition: var(--transition);
+}
+
+.about__me:hover {
+    background: var(--color-bg-variant-reverse);     
 }
 
 .about__me-image {
-    border-radius: 2rem;
+    width: 100%;
+    height: fit-content;
+    border-radius: 1rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
@@ -32,7 +38,6 @@
 
 .about__card {
     background: var(--color-bg-variant);
-    border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -40,8 +45,7 @@
 }
 
 .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-bg-variant-reverse);
     cursor: default;
 }
 
@@ -78,8 +82,12 @@
    }
 
    .about__content p {
-       margin: 1rem 0 1.5rem;
+       margin: 3rem 0 3rem;
    }
+
+   .about__content{
+    text-align: center;
+}
    
 }
 
@@ -87,7 +95,7 @@
 @media screen and (max-width: 600px) {
     .about__me {
         width: 65%;
-        margin: 5rem auto 7rem;
+        margin: 1rem auto 3rem;
         
     }
 

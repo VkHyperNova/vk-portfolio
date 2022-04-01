@@ -12,10 +12,9 @@
 
 :root {
     --color-bg: #1f1f38;
-    /* --color-bg-variant: #2c2c6c; */
-    --color-bg-variant: gray;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-bg-variant: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 0%, rgba(33,29,1,0.5) 80%);
+    --color-bg-variant-reverse: linear-gradient(0deg, rgba(105, 133, 212, 0.7) 0%, rgba(33,29,1,0.7) 80%);
+    --color-primary: #19bd4d;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
@@ -102,7 +101,7 @@ a:hover {
 
 .btn-primary {
     background: var(--color-primary);
-    color: var(--color-bg);
+    color: var(--color-white);
 }
 
 img {

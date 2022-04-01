@@ -1,16 +1,18 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/mina.jpg'
+import ME from '../../assets/mina-no-bg.png'
 import HeaderSocials from './HeaderSocials'
+
+import Typical from 'react-typical'
 
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
-        <h5>Hello I am</h5>
+      <div className="container header__container"> 
+        <h5 className="text-light">Hello I am</h5>
         <h1>Veikko Kiis</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <h5 className="text-light"><Typical loop={Infinity} wrapper="p" steps={['Programmer', 1000, 'and', 1000, 'Web-developer', 1000]}/></h5>
         <CTA />
         <HeaderSocials />
 
@@ -22,5 +24,6 @@ const Header = () => {
     </header>
   )
 }
+
 
 export default Header
