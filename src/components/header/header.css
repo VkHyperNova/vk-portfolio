@@ -48,7 +48,7 @@ header {
 
 /* Scroll down */
 .scroll__down {
-    position: sticky;
+    position: absolute;
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);

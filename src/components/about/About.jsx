@@ -41,7 +41,7 @@ const About = () => {
             I learn new things every day.
              Every project teaches me something new.
             I learn by doing. 
-            Most of my project are my own ideas. <br/><br/>
+            Most of my project are my own ideas. 
             I like backend stuff more than frontend. 
             But I can do both. <br/><br/>
             My Goal is to be a Fullstack developer one day. 
