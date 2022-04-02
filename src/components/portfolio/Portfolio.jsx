@@ -5,42 +5,36 @@ import IMG1 from '../../assets/portfolio1.png'
 /* data for the map */
 const data = [
   {
-    id: 1,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
-    id: 2,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
-    id: 3,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
-    id: 4,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
-    id: 5,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
     demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
   },
   {
-    id: 6,
     image: IMG1,
     title: 'Test Project 1',
     github: 'https://github.com',
@@ -59,9 +53,9 @@ const Portfolio = () => {
 
         {/* iterate over map */}
        {
-         data.map(({id, image, title, github, demo}) => {
+         data.map(({image, title, github, demo}, index) => {
            return (
-            <article key={id} className="portfolio__item">
+            <article key={index} className="portfolio__item">
             <div className="portfolio__item-image">
               <img src={image} alt={title} />
             </div>

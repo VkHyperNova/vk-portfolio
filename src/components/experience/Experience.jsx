@@ -1,6 +1,114 @@
 import React from 'react'
 import './experience.css'
-import {BsPatchCheckFill} from 'react-icons/bs'
+import { BsPatchCheckFill } from 'react-icons/bs'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { DiCss3 } from 'react-icons/di'
+import { SiJavascript } from 'react-icons/si'
+import { SiBootstrap } from 'react-icons/si'
+import { DiJqueryLogo } from 'react-icons/di'
+import { SiReact } from 'react-icons/si'
+import { SiAngular } from 'react-icons/si'
+import { RiPsychotherapyLine } from 'react-icons/ri'
+import { AiOutlineConsoleSql } from 'react-icons/ai'
+import { SiPostgresql } from 'react-icons/si'
+import { IoLogoNodejs } from 'react-icons/io'
+import { SiExpress } from 'react-icons/si'
+
+import { SiGoland } from 'react-icons/si'
+import { SiPython } from 'react-icons/si'
+import { BsWordpress } from 'react-icons/bs'
+import { SiDjango } from 'react-icons/si'
+
+const Frontend = [
+  {
+    lang: 'HTML',
+    desc: 'Experienced',
+    icon: AiFillHtml5
+  },
+  {
+    lang: 'CSS',
+    desc: 'Experienced',
+    icon: DiCss3
+  },
+  {
+    lang: 'Javascript',
+    desc: 'Experienced',
+    icon: SiJavascript
+  },
+  {
+    lang: 'Bootstrap',
+    desc: 'Experienced',
+    icon: SiBootstrap
+  },
+  {
+    lang: 'jQuery',
+    desc: 'Experienced',
+    icon: DiJqueryLogo
+  },
+  {
+    lang: 'React JS',
+    desc: 'Some Experience (This website)',
+    icon: SiReact
+  },
+  {
+    lang: 'Angular JS',
+    desc: 'Some Experience',
+    icon: SiAngular
+  },
+  {
+    lang: 'Other JS Libraries',
+    desc: 'Some Experience, Learning',
+    icon: RiPsychotherapyLine
+  },
+]
+
+const Backend = [
+  {
+    lang: 'MySQL',
+    desc: 'Experienced',
+    icon: AiOutlineConsoleSql
+  },
+  {
+    lang: 'PostgreSQL',
+    desc: 'Experienced',
+    icon: SiPostgresql
+  },
+  {
+    lang: 'Node JS',
+    desc: 'Experienced',
+    icon: IoLogoNodejs
+  },
+  {
+    lang: 'Express JS',
+    desc: 'Experienced',
+    icon: SiExpress
+  },
+  {
+    lang: 'GO LANGUAGE',
+    desc: 'Experienced',
+    icon: SiGoland
+  },
+  {
+    lang: 'Python',
+    desc: 'Experienced',
+    icon: SiPython
+  },
+  {
+    lang: 'Django',
+    desc: 'Some Experience',
+    icon: SiDjango
+  },
+  {
+    lang: 'Wordpress (PHP)',
+    desc: 'Some Experience',
+    icon: BsWordpress
+  },
+  {
+    lang: 'C# and Java',
+    desc: 'Some Experience. Learning',
+    icon: RiPsychotherapyLine
+  }
+]
 
 const Experience = () => {
   return (
@@ -8,163 +116,49 @@ const Experience = () => {
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
 
-
-      {/* Frontend */}
       <div className="container experience__container">
+
+        {/* Frontend */}
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-
-            {/* HTML */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>HTML</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* CSS */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>CSS</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* JAVASCRIPT */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Javascript</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            
-            {/* Bootstrap */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Bootstrap</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* JQuery */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>jQuery</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* React JS */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>React JS</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article>
-
-            {/* Angular JS */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Angular JS</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article> 
-
-            {/* Other JS Libraries*/}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Other JS Libraries</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article> 
+            {
+              Frontend.map(({ lang, desc, icon }, index) => {
+                const Icon = icon;
+                return (
+                  <article key={index} className="experience__details">
+                    <BsPatchCheckFill className='experience__details-icon' />
+                    <div>
+                      <Icon className='experience__details-language-icon' />
+                      <h4>{lang}</h4>
+                      <small className="text-light">{desc}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
 
-        {/* BACKEND */}
+        {/* Backend */}
         <div className="experience__backend">
-        <h3>Backend Development</h3>
+          <h3>Backend Development</h3>
           <div className="experience__content">
-            
-            {/* MySQL */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>MySQL</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* Postgres */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>PostgreSQL</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* Node JS */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Node JS</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* Express JS */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Express JS</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article>
-
-            {/* GOLANG */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>GO LANGUAGE</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            {/* Python */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Python and Django</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article>
-
-            {/* Wordpress and php */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>Wordpress (PHP)</h4>
-              <small className="text-light">Some Experience</small>
-              </div>
-            </article>
-
-            {/* C# and Java */}
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-              <h4>C# and Java</h4>
-              <small className="text-light">Learning</small>
-              </div>
-            </article>  
+            {
+              Backend.map(({ lang, desc, icon }, index) => {
+                const Icon = icon;
+                return (
+                  <article key={index} className="experience__details">
+                    <BsPatchCheckFill className='experience__details-icon' />
+                    <div>
+                      <Icon className='experience__details-language-icon' />
+                      <h4>{lang}</h4>
+                      <small className="text-light">{desc}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
       </div>
