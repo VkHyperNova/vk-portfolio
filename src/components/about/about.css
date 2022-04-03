@@ -44,9 +44,13 @@
     transition: var(--transition);
 }
 
-.about__card:hover {
+.about__card:hover{
     background: var(--color-bg-variant-reverse);
     cursor: default;
+}
+
+.about__card:hover .about__icon {
+    color: var(--color-white);
 }
 
 .about__icon {

@@ -36,15 +36,16 @@
 }
 
 .service__list li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    /* gap: 0.5rem; */
+    /* margin-bottom: 0.5rem; */
 }
 
 .service__list-icon {
     color: var(--color-primary);
     margin-top: 2px;
-    font-size: 8rem;
+    font-size: 1rem;
 }
 
 .service__list p {

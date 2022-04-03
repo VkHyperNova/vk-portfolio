@@ -1,6 +1,43 @@
 import React from 'react'
 import './services.css'
-import {BiCheck} from 'react-icons/bi'
+
+import { BsPatchCheckFill } from 'react-icons/bs'
+
+const design = [
+  {
+    desc: 'Lorem  ipsum dolor sit amet consecteturipsum dolor sit amet consecteturipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores' 
+  },
+  {
+    desc: 'Lorem ipsum '
+  },
+  {
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores'
+  },
+]
+
+const web_dev = [
+  {
+    desc: 'asdasdasdas dasddasdasddasdasddasd asddasdasdasdsad asdsadadsadasdasdasda'
+  },
+  {
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. Te'
+  },
+  {
+    desc: 'asd'
+  },
+]
+
+const win = [
+  {
+    desc: 'asd'
+  },
+  {
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. Te'
+  },
+  {
+    desc: 'asd'
+  },
+]
 
 const Services = () => {
   return (
@@ -15,91 +52,62 @@ const Services = () => {
           <div className="service__head">
             <h3>UI/UX Design</h3>
           </div>
+          {
+            design.map(({ desc }, index) => {
+              return (
+                <ul key={index} className="service__list">
+                  <li>
+                    <BsPatchCheckFill className='service__list-icon' />
+                    <p>{desc}</p>
+                  </li>
+                </ul>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-          </ul>
+              )
+            })
+          }
         </article>
-        
+
         {/* WEB DEVELOPMENT */}
         <article className="service">
           <div className="service__head">
             <h3>Web Development</h3>
           </div>
+          {
+            web_dev.map(({ desc }, index) => {
+              return (
+                <ul key={index} className="service__list">
+                  <li>
+                    <BsPatchCheckFill className='service__list-icon' />
+                    <p>{desc}</p>
+                  </li>
+                </ul>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-          </ul>
+              )
+            })
+          }
         </article>
-        
+
         {/* Content Creation */}
         <article className="service">
           <div className="service__head">
             <h3>Content Creation</h3>
           </div>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon'/>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit voluptates tempora, libero fugiat aliquid nobis amet eius magni! Hic eligendi praesentium architecto nobis quae laboriosam neque perferendis in quisquam tempore!</p>
-            </li>
-          </ul>
+          {
+            win.map(({ desc }, index) => {
+              return (
+                <ul key={index} className="service__list">
+                  <li>
+                    <BsPatchCheckFill className='service__list-icon' />
+                    <p>{desc}</p>
+                  </li>
+                </ul>
+
+              )
+            })
+          }
         </article>
-        
+
       </div>
     </section>
   )

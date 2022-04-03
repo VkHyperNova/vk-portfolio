@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
+
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { SiJavascript } from 'react-icons/si'
@@ -13,7 +13,6 @@ import { AiOutlineConsoleSql } from 'react-icons/ai'
 import { SiPostgresql } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { SiExpress } from 'react-icons/si'
-
 import { SiGoland } from 'react-icons/si'
 import { SiPython } from 'react-icons/si'
 import { BsWordpress } from 'react-icons/bs'
@@ -127,7 +126,7 @@ const Experience = () => {
                 const Icon = icon;
                 return (
                   <article key={index} className="experience__details">
-                    <BsPatchCheckFill className='experience__details-icon' />
+                    {/* <BsPatchCheckFill className='experience__details-icon' /> */}
                     <div>
                       <Icon className='experience__details-language-icon' />
                       <h4>{lang}</h4>
@@ -149,7 +148,7 @@ const Experience = () => {
                 const Icon = icon;
                 return (
                   <article key={index} className="experience__details">
-                    <BsPatchCheckFill className='experience__details-icon' />
+                    {/* <BsPatchCheckFill className='experience__details-icon' /> */}
                     <div>
                       <Icon className='experience__details-language-icon' />
                       <h4>{lang}</h4>
