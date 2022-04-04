@@ -1,22 +1,11 @@
 import React from 'react'
 import './experience.css'
-
-import { AiFillHtml5 } from 'react-icons/ai'
-import { DiCss3 } from 'react-icons/di'
-import { SiJavascript } from 'react-icons/si'
-import { SiBootstrap } from 'react-icons/si'
-import { DiJqueryLogo } from 'react-icons/di'
-import { SiReact } from 'react-icons/si'
-import { SiAngular } from 'react-icons/si'
+import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
+import { DiCss3, DiJqueryLogo } from 'react-icons/di'
+import { SiJavascript, SiBootstrap, SiReact, SiAngular, SiPostgresql, SiExpress, SiGoland, SiPython, SiDjango } from 'react-icons/si'
 import { RiPsychotherapyLine } from 'react-icons/ri'
-import { AiOutlineConsoleSql } from 'react-icons/ai'
-import { SiPostgresql } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
-import { SiExpress } from 'react-icons/si'
-import { SiGoland } from 'react-icons/si'
-import { SiPython } from 'react-icons/si'
 import { BsWordpress } from 'react-icons/bs'
-import { SiDjango } from 'react-icons/si'
 
 const stack = [
   {
@@ -49,7 +38,7 @@ const stack = [
       },
       {
         lang: 'React JS',
-        desc: 'Some Experience (This website)',
+        desc: 'Some Experience',
         icon: SiReact
       },
       {

@@ -1,18 +1,13 @@
 import React from 'react'
 import './testimonials.css'
-import AVTR1 from '../../assets/avatar1.jpg'
-import AVTR2 from '../../assets/avatar2.jpg'
-import AVTR3 from '../../assets/avatar3.jpg'
-import AVTR4 from '../../assets/avatar4.jpg'
-
-
-
-/* SWIPER */
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-
+import AVTR1 from '../../assets/avatar1.jpg'
+import AVTR2 from '../../assets/avatar2.jpg'
+import AVTR3 from '../../assets/avatar3.jpg'
+import AVTR4 from '../../assets/avatar4.jpg'
 
 const data = [
   {
@@ -44,9 +39,9 @@ const Testimonials = () => {
       <h2>Testimonials</h2>
       <Swiper spaceBetween={40} slidesPerView={1} pagination={{ clickable: true}} modules={[Pagination]} className="mySwiper container testimonials__container">
         {
-          data.map(({ avatar, name, review }, index) => {
+          data.map(({ avatar, name, review }) => {
             return (
-              <SwiperSlide key={index} className="testimonial">
+              <SwiperSlide className="testimonial">
                 <div className="client__avatar">
                   <img src={avatar} />
                 </div>

@@ -50,9 +50,9 @@ const Portfolio = () => {
       <h2>Porfolio</h2>
       <div className="container portfolio__container">
         {
-          data.map(({ image, title, github, demo }, index) => {
+          data.map(({ image, title, github, demo }) => {
             return (
-              <article key={index} className="portfolio__item">
+              <article className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>

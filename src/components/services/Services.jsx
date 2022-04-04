@@ -1,6 +1,5 @@
 import React from 'react'
 import './services.css'
-
 import { BsPatchCheckFill } from 'react-icons/bs'
 
 const services = [
