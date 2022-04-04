@@ -42,7 +42,6 @@ const Testimonials = () => {
     <section id='testimonials'>
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
-
       <Swiper spaceBetween={40} slidesPerView={1} pagination={{ clickable: true}} modules={[Pagination]} className="mySwiper container testimonials__container">
         {
           data.map(({ avatar, name, review }, index) => {

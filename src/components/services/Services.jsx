@@ -3,114 +3,84 @@ import './services.css'
 
 import { BsPatchCheckFill } from 'react-icons/bs'
 
-const design = [
+const services = [
   {
-    desc: 'Lorem  ipsum dolor sit amet consecteturipsum dolor sit amet consecteturipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores' 
+    name: 'UI/UX Design',
+    desc: [
+      {
+        item: 'design asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd asd asd asd'
+      },
+    ]
   },
   {
-    desc: 'Lorem ipsum '
+    name: 'Web Development',
+    desc: [
+      {
+        item: 'webdevv asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd asd asd asd'
+      },
+    ]
   },
   {
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores'
-  },
+    name: 'Content Creation',
+    desc: [
+      {
+        item: 'content asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd asd'
+      },
+      {
+        item: 'asd asd asd asd asd'
+      },
+    ]
+  }
 ]
-
-const web_dev = [
-  {
-    desc: 'asdasdasdas dasddasdasddasdasddasd asddasdasdasdsad asdsadadsadasdasdasda'
-  },
-  {
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. Te'
-  },
-  {
-    desc: 'asd'
-  },
-]
-
-const win = [
-  {
-    desc: 'asd'
-  },
-  {
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. TeLorem ipsum dolor sit amet consectetur adipisicing elit. Te'
-  },
-  {
-    desc: 'asd'
-  },
-]
-
 const Services = () => {
   return (
     <section id='services'>
       <h5>What I Offer</h5>
       <h2>Services</h2>
-
       <div className="container services__container">
-
-        {/* UI/UX Design*/}
-        <article className="service">
-          <div className="service__head">
-            <h3>UI/UX Design</h3>
-          </div>
-          {
-            design.map(({ desc }, index) => {
-              return (
-                <ul key={index} className="service__list">
-                  <li>
-                    <BsPatchCheckFill className='service__list-icon' />
-                    <p>{desc}</p>
-                  </li>
-                </ul>
-
-              )
-            })
-          }
-        </article>
-
-        {/* WEB DEVELOPMENT */}
-        <article className="service">
-          <div className="service__head">
-            <h3>Web Development</h3>
-          </div>
-          {
-            web_dev.map(({ desc }, index) => {
-              return (
-                <ul key={index} className="service__list">
-                  <li>
-                    <BsPatchCheckFill className='service__list-icon' />
-                    <p>{desc}</p>
-                  </li>
-                </ul>
-
-              )
-            })
-          }
-        </article>
-
-        {/* Content Creation */}
-        <article className="service">
-          <div className="service__head">
-            <h3>Content Creation</h3>
-          </div>
-
-          {
-            win.map(({ desc }, index) => {
-              return (
-                <ul key={index} className="service__list">
-                  <li>
-                    <BsPatchCheckFill className='service__list-icon' />
-                    <p>{desc}</p>
-                  </li>
-                </ul>
-
-              )
-            })
-          }
-        </article>
-
+        {
+          services.map(({ name, desc }) => {
+            return (
+              <article className="service">
+                <div className="service__head">
+                  <h3>{name}</h3>
+                </div>
+                {
+                  desc.map(({ item }) => {
+                    return (
+                      <ul className="service__list">
+                        <li>
+                          <BsPatchCheckFill className='service__list-icon' />
+                          <p>{item}</p>
+                        </li>
+                      </ul>
+                    )
+                  })
+                }
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
 }
 
 export default Services
+
+

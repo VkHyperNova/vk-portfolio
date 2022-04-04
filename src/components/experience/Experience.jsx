@@ -18,95 +18,103 @@ import { SiPython } from 'react-icons/si'
 import { BsWordpress } from 'react-icons/bs'
 import { SiDjango } from 'react-icons/si'
 
-const Frontend = [
+const stack = [
   {
-    lang: 'HTML',
-    desc: 'Experienced',
-    icon: AiFillHtml5
+    name: 'Frontend Development',
+    skills: [
+      {
+        lang: 'HTML',
+        desc: 'Experienced',
+        icon: AiFillHtml5
+      },
+      {
+        lang: 'CSS',
+        desc: 'Experienced',
+        icon: DiCss3
+      },
+      {
+        lang: 'Javascript',
+        desc: 'Experienced',
+        icon: SiJavascript
+      },
+      {
+        lang: 'Bootstrap',
+        desc: 'Experienced',
+        icon: SiBootstrap
+      },
+      {
+        lang: 'jQuery',
+        desc: 'Experienced',
+        icon: DiJqueryLogo
+      },
+      {
+        lang: 'React JS',
+        desc: 'Some Experience (This website)',
+        icon: SiReact
+      },
+      {
+        lang: 'Angular JS',
+        desc: 'Some Experience',
+        icon: SiAngular
+      },
+      {
+        lang: 'Other JS Libraries',
+        desc: 'Some Experience, Learning',
+        icon: RiPsychotherapyLine
+      }
+    ]
   },
   {
-    lang: 'CSS',
-    desc: 'Experienced',
-    icon: DiCss3
-  },
-  {
-    lang: 'Javascript',
-    desc: 'Experienced',
-    icon: SiJavascript
-  },
-  {
-    lang: 'Bootstrap',
-    desc: 'Experienced',
-    icon: SiBootstrap
-  },
-  {
-    lang: 'jQuery',
-    desc: 'Experienced',
-    icon: DiJqueryLogo
-  },
-  {
-    lang: 'React JS',
-    desc: 'Some Experience (This website)',
-    icon: SiReact
-  },
-  {
-    lang: 'Angular JS',
-    desc: 'Some Experience',
-    icon: SiAngular
-  },
-  {
-    lang: 'Other JS Libraries',
-    desc: 'Some Experience, Learning',
-    icon: RiPsychotherapyLine
-  },
-]
-
-const Backend = [
-  {
-    lang: 'MySQL',
-    desc: 'Experienced',
-    icon: AiOutlineConsoleSql
-  },
-  {
-    lang: 'PostgreSQL',
-    desc: 'Experienced',
-    icon: SiPostgresql
-  },
-  {
-    lang: 'Node JS',
-    desc: 'Experienced',
-    icon: IoLogoNodejs
-  },
-  {
-    lang: 'Express JS',
-    desc: 'Experienced',
-    icon: SiExpress
-  },
-  {
-    lang: 'GO LANGUAGE',
-    desc: 'Experienced',
-    icon: SiGoland
-  },
-  {
-    lang: 'Python',
-    desc: 'Experienced',
-    icon: SiPython
-  },
-  {
-    lang: 'Django',
-    desc: 'Some Experience',
-    icon: SiDjango
-  },
-  {
-    lang: 'Wordpress (PHP)',
-    desc: 'Some Experience',
-    icon: BsWordpress
-  },
-  {
-    lang: 'C# and Java',
-    desc: 'Some Experience. Learning',
-    icon: RiPsychotherapyLine
+    name: 'Backend Development',
+    skills: [
+      {
+        lang: 'MySQL',
+        desc: 'Experienced',
+        icon: AiOutlineConsoleSql
+      },
+      {
+        lang: 'PostgreSQL',
+        desc: 'Experienced',
+        icon: SiPostgresql
+      },
+      {
+        lang: 'Node JS',
+        desc: 'Experienced',
+        icon: IoLogoNodejs
+      },
+      {
+        lang: 'Express JS',
+        desc: 'Experienced',
+        icon: SiExpress
+      },
+      {
+        lang: 'GO LANGUAGE',
+        desc: 'Experienced',
+        icon: SiGoland
+      },
+      {
+        lang: 'Python',
+        desc: 'Experienced',
+        icon: SiPython
+      },
+      {
+        lang: 'Django',
+        desc: 'Some Experience',
+        icon: SiDjango
+      },
+      {
+        lang: 'Wordpress (PHP)',
+        desc: 'Some Experience',
+        icon: BsWordpress
+      },
+      {
+        lang: 'C# and Java',
+        desc: 'Some Experience. Learning',
+        icon: RiPsychotherapyLine
+      }
+    ]
   }
+
 ]
 
 const Experience = () => {
@@ -116,53 +124,36 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-
-        {/* Frontend */}
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            {
-              Frontend.map(({ lang, desc, icon }, index) => {
-                const Icon = icon;
-                return (
-                  <article key={index} className="experience__details">
-                    {/* <BsPatchCheckFill className='experience__details-icon' /> */}
-                    <div>
-                      <Icon className='experience__details-language-icon' />
-                      <h4>{lang}</h4>
-                      <small className="text-light">{desc}</small>
-                    </div>
-                  </article>
-                )
-              })
-            }
-          </div>
-        </div>
-
-        {/* Backend */}
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            {
-              Backend.map(({ lang, desc, icon }, index) => {
-                const Icon = icon;
-                return (
-                  <article key={index} className="experience__details">
-                    {/* <BsPatchCheckFill className='experience__details-icon' /> */}
-                    <div>
-                      <Icon className='experience__details-language-icon' />
-                      <h4>{lang}</h4>
-                      <small className="text-light">{desc}</small>
-                    </div>
-                  </article>
-                )
-              })
-            }
-          </div>
-        </div>
+        {
+          stack.map(({ name, skills }) => {
+            return (
+              <div className="experience__frontend">
+                <h3>{name}</h3>
+                <div className="experience__content">
+                  {
+                    skills.map(({ lang, desc, icon }) => {
+                      const Icon = icon;
+                      return (
+                        <article className="experience__details">
+                          <div>
+                            <Icon className='experience__details-language-icon' />
+                            <h4>{lang}</h4>
+                            <small className="text-light">{desc}</small>
+                          </div>
+                        </article>
+                      )
+                    })
+                  }
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
     </section>
   )
 }
 
 export default Experience
+
+

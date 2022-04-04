@@ -15,7 +15,6 @@ const Header = () => {
         <h5 className="text-light"><Typical loop={Infinity} wrapper="p" steps={['Programmer', 1000, 'and', 1000, 'Web-developer', 1000]}/></h5>
         <CTA />
         <HeaderSocials />
-
         <div className="me">
           <img src={ME} alt="me" />
         </div>
