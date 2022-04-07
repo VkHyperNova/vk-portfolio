@@ -7,14 +7,12 @@
 .portfolio__item {
     background: var(--color-bg-variant);
     padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+    border-radius: 2rem;   
     transition: var(--transition);
 }
 
 .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+    background: var(--color-bg-variant-reverse);
 }
 
 .portfolio__item-image {

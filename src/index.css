@@ -14,7 +14,7 @@
     --color-bg: #000000;
     --color-bg-variant: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 0%, rgba(33,29,1,0.5) 80%);
     --color-bg-variant-reverse: linear-gradient(0deg, rgba(105, 133, 212, 0.7) 0%, rgba(33,29,1,0.7) 80%);
-    --color-bg-variant2: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 80%, rgba(33,29,1,0.5) 0%);
+    
     --color-primary: #19bd4d;
     --color-secondary: rgba(130, 212, 105, 0.5);
     --color-white: #fff;

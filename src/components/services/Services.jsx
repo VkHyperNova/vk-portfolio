@@ -7,13 +7,16 @@ const services = [
     name: 'UI/UX Design',
     desc: [
       {
-        item: 'design asd asd asd'
+        item: 'Websites'
       },
       {
-        item: 'asd asd asd asd asd asd'
+        item: 'Landing pages'
       },
       {
-        item: 'asd asd asd asd asd asd asd asd'
+        item: 'Mobile apps'
+      },
+      {
+        item: 'SaaS (Coming Soon)'
       },
     ]
   },
@@ -21,27 +24,39 @@ const services = [
     name: 'Web Development',
     desc: [
       {
-        item: 'webdevv asd asd asd'
+        item: 'Landing pages'
       },
       {
-        item: 'asd asd asd asd asd asd'
+        item: 'Personal websites'
       },
       {
-        item: 'asd asd asd asd asd asd asd asd'
+        item: 'Corporate websites'
+      },
+      {
+        item: 'E-commerce websites'
+      },
+      {
+        item: 'Blog sites'
+      },
+      {
+        item: 'Portfolio sites'
       },
     ]
   },
   {
-    name: 'Content Creation',
+    name: 'Other',
     desc: [
       {
-        item: 'content asd asd asd'
+        item: 'Website administration'
       },
       {
-        item: 'asd asd asd asd asd asd'
+        item: 'Consulting and help Fixing Bugs'
       },
       {
-        item: 'asd asd asd asd asd'
+        item: 'Updating/Adding new features for existing websites'
+      },
+      {
+        item: 'Making Windows Software'
       },
     ]
   }
@@ -59,18 +74,18 @@ const Services = () => {
                 <div className="service__head">
                   <h3>{name}</h3>
                 </div>
+                <ul className="service__list">
                 {
                   desc.map(({ item }) => {
                     return (
-                      <ul className="service__list">
                         <li>
                           <BsPatchCheckFill className='service__list-icon' />
                           <p>{item}</p>
                         </li>
-                      </ul>
                     )
                   })
                 }
+                </ul>
               </article>
             )
           })

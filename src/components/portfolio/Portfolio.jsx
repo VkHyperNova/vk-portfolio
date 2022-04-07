@@ -2,7 +2,6 @@ import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.png'
 
-/* data for the map */
 const data = [
   {
     image: IMG1,
