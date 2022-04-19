@@ -16,13 +16,12 @@
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-bg-variant-reverse);
+
 }
 
 .contact__option-icon {
@@ -43,37 +42,70 @@ form {
     gap: 1.2rem;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
     resize: none;
     color: var(--color-white);
+    background: rgba(105, 231, 109, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(105, 231, 109, 0.2);
+}
+
+::placeholder {
+    color: var(--color-white);
+    opacity: 1;
+}
+
+
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+button.send {
+    animation: sent 1s ease 0s 1 normal forwards;
+}
+
+@keyframes sent {
+    0% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(-540deg) scale(0);
+    }
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
 @media screen and (max-width: 1024px) {
-   .container.contact__container {
-       grid-template-columns: 1fr;
-       gap: 2rem;
-   }
+    .container.contact__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 
-   input, textarea {
-    width: 90%;
+    input,
+    textarea {
+        width: 90%;
+    }
+
 }
-    
- }
- 
- /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
- @media screen and (max-width: 600px) {
+
+
+
+/* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
+@media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
     }
 
-    input, textarea {
+    input,
+    textarea {
         width: 85%;
     }
-   
- }
+
+}

@@ -5,6 +5,7 @@ import { RiMessengerLine } from 'react-icons/ri'
 import { SiTelegram } from 'react-icons/si'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
+import AnimatedButton from './SendButton.js'
 
 const socials = [
   {
@@ -64,10 +65,10 @@ const Contact = () => {
           }
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='emaiol' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message'></textarea>
-          <button type="submit" className='btn btn-primary'>Send Message</button>
+          <input type="text" id='name' placeholder='Your Name' required />
+          <input type="email" id='email' placeholder='Your Email' required />
+          <textarea id="message" rows="7" placeholder='Your Message' required></textarea>
+          <AnimatedButton/>
         </form>
       </div>
     </section>
