@@ -66,10 +66,10 @@ textarea:focus::placeholder {
 }
 
 button.send {
-    animation: sent 1s ease 0s 1 normal forwards;
+    animation: msg_sent 1s ease 0s 1 normal forwards;
 }
 
-@keyframes sent {
+@keyframes msg_sent {
     0% {
         opacity: 1;
         transform: rotate(0) scale(1);
@@ -78,6 +78,34 @@ button.send {
     100% {
         opacity: 0;
         transform: rotate(-540deg) scale(0);
+    }
+}
+
+button.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
     }
 }
 
