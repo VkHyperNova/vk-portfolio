@@ -10,6 +10,52 @@ header {
     position: relative;
 }
 
+.dl-button {
+    width: max-content;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.dl-button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.1s;
+}
+
+.dl-button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: -1px;
+    right: -5px;
+    font-size: 30px;
+    transition: 0.1s;
+}
+
+.dl-button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+    font-weight: bold;
+    transform: scale(1.1);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.dl-button:hover:after {
+    opacity: 1;
+    right: 5px;
+}
+
+.dl-button:active {
+    transform: translateY(1px);
+}
+
 /* CTA */
 .cta {
     margin-top: 2.5rem;

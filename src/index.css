@@ -12,9 +12,9 @@
 
 :root {
     --color-bg: #000000;
-    --color-bg-variant: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 0%, rgba(33,29,1,0.5) 80%);
-    --color-bg-variant-reverse: linear-gradient(0deg, rgba(105, 133, 212, 0.7) 0%, rgba(33,29,1,0.7) 80%);
-    
+    --color-bg-variant: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 0%, rgba(33, 29, 1, 0.5) 80%);
+    --color-bg-variant-reverse: linear-gradient(0deg, rgba(105, 133, 212, 0.7) 0%, rgba(33, 29, 1, 0.7) 80%);
+
     --color-primary: #19bd4d;
     --color-secondary: rgba(130, 212, 105, 0.5);
     --color-white: #fff;
@@ -49,7 +49,11 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 
@@ -61,12 +65,13 @@ section {
     margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
@@ -75,35 +80,36 @@ section > h2 {
     color: var(--color-light);
 }
 
-a {
-    color: var(--color-primary);
-    transition: var(--transition);
-}
-
-a:hover {
-    color: var(--color-white);
-}
-
 .btn {
     width: max-content;
-    display: inline-block;
     color: var(--color-primary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
-    cursor: pointer;
     border: 1px solid var(--color-primary);
-    transition: var(--transition);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    /* background-image: linear-gradient(rgba(105, 133, 212, 0.7) , rgba(33, 29, 1, 0.7) );
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .1s; */
 }
 
 .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
+    transform: scale(1.1);
+    border: transparent;
     border-color: transparent;
+    border-radius: 0.8rem;
+    background-size: 100% 100%;
+    font-weight: bold;
 }
 
-.btn-primary {
-    background: var(--color-primary);
-    color: var(--color-white);
+.btn:active {
+    transform: translateY(1px);
 }
 
 img {
@@ -130,8 +136,7 @@ img {
         width: var(--container-width-sm);
     }
 
-    section > h2 {
+    section>h2 {
         margin-bottom: 2rem;
     }
 }
-
