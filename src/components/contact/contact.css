@@ -109,6 +109,15 @@ button.shake {
     }
 }
 
+.contact__option a {
+    color: var(--color-white);
+}
+
+.contact__option a:hover {
+    font-weight: bolder;
+    transform: scale(1.2);   
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
 @media screen and (max-width: 1024px) {
     .container.contact__container {

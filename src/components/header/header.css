@@ -73,11 +73,21 @@ header {
     bottom: 3rem;
 }
 
+.header__socials a {
+    color: var(--color-white);
+    font-size: larger;
+}
+
+.header__socials a:hover {
+    transform: scale(1.5);   
+}
+
+/* Line */
 .header__socials::after{
     content: "";
     width: 3px;
     height: 2rem;
-    background: var(--color-primary);
+    background: var(--color-white);
 }
 
 /* ME */
@@ -98,7 +108,7 @@ header {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
-
+    color: var(--color-white);
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
