@@ -32,10 +32,10 @@ header {
     content: '»';
     position: absolute;
     opacity: 0;
-    top: -1px;
-    right: -5px;
+    top: 1px;
     font-size: 30px;
     transition: 0.1s;
+    transform: rotate(90deg);
 }
 
 .dl-button:hover {
@@ -43,8 +43,6 @@ header {
     padding-left: 8px;
     font-weight: bold;
     transform: scale(1.1);
-    color: var(--color-white);
-    border-color: var(--color-white);
 }
 
 .dl-button:hover:after {

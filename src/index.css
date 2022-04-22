@@ -91,21 +91,12 @@ section>h2 {
     display: inline-block;
     background-color: var(--color-primary);
     color: var(--color-white);
-
-    /* background-image: linear-gradient(rgba(105, 133, 212, 0.7) , rgba(33, 29, 1, 0.7) );
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    transition: background-size .1s; */
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    border: transparent;
-    border-color: transparent;
-    border-radius: 0.8rem;
-    background-size: 100% 100%;
+    transform: scale(1.1);   
     font-weight: bold;
+    background-color: transparent;
 }
 
 .btn:active {
