@@ -8,7 +8,7 @@ import Typical from 'react-typical'
 
 const Header = () => {
   return (
-    <header>
+    <header id="home">
       <div className="container header__container"> 
         <h5 className="text-light">Hello I am</h5>
         <h1>Veikko Kiis</h1>

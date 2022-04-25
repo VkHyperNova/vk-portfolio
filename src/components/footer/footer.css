@@ -33,7 +33,7 @@ footer a {
 }
 
 .footer__socials a {
-    background: var(--color-bg);
+    background-image: url(../../../src/assets/bg-texture.png);
     color: var(--color-white);
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -42,9 +42,9 @@ footer a {
 }
 
 .footer__socials a:hover {
-    background: transparent;
-    color: var(--color-bg);
-    border-color: var(--color-bg);
+    
+    transform: scale(1.1);
+    
 }
 
 .footer__copyright {

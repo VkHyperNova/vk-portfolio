@@ -51,21 +51,35 @@
 
 .about__card:hover .about__icon {
     color: var(--color-white);
+    transform: scale(1.5);
+}
+
+.about__card:hover small {
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.about__card:hover h5 {
+    color: var(--color-light);
+    font-size: 0.8rem;
 }
 
 .about__icon {
     color: var(--color-primary);
     font-size: 1.4rem;
     margin-bottom: 1rem;
+    transition: .1s;
 }
 
 .about__card h5 {
     font-size: 0.95rem;
+    transition: .1s;
 }
 
 .about__card small {
     font-size: 0.7rem;
     color: var(--color-light);
+    transition: .1s;
 }
 
 .about__content p {

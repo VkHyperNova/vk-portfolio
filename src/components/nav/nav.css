@@ -2,7 +2,7 @@ nav {
     background: rgba(0,0,0,0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 1rem 2rem;
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -12,23 +12,61 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
+    transition: .1s;
 }
 
 nav a {
     background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
+    padding: 0.1rem 0.7rem;
+    border-radius: 20%;
+    display: block;
     color: var(--color-light);
-    font-size: 1.1rem;
+    font-size: 1.9rem;
+    text-align: center;
+    transition: 1s;
 }
 
 nav a:hover {
-    background: rgba(0,0,0,0.3);   
+    transform: scale(1.2);   
+    color: var(--color-white);
 }
 
 nav a.active {
     background: var(--color-primary);
-    color: var(--color-bg);
-
+    color: var(--color-bg); 
+    transition: .1s;
 }
+
+nav a:active {
+    transform: translateY(2px); 
+    
+    transition: .1s;
+}
+
+nav a.active:hover {
+    transform: scale(1);   
+    color: var(--color-white);
+    transition: .1s; 
+}
+
+nav p {
+    font-size: small;
+    margin-top: -0.9rem;
+}
+ 
+ /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
+ @media screen and (max-width: 600px) {
+    
+    nav p {
+        display: none;
+    }
+
+    nav a {
+        padding: 2vw 3vw;
+        display: flex;
+        font-size: 5vw;      
+    } 
+ }
+
+
+ 

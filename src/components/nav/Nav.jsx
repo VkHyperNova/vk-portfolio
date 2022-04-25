@@ -1,20 +1,36 @@
-import {React, useState } from 'react'
+import { React, useState } from 'react'
 import './nav.css'
-import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
-import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
+import { Link } from 'react-scroll'
+import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
+import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
+import { RiServiceLine } from 'react-icons/ri'
 
 
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
   return (
+
     <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail/></a>
+      <Link to="home" spy={true} smooth={true} offset={-100} duration={0} >
+      <AiOutlineHome/>
+        <p>home</p>
+      </Link>
+      <Link to="about" spy={true} smooth={true} offset={-100} duration={0} >
+      <AiOutlineUser/>
+        <p>about</p>
+      </Link>
+      <Link to="experience" spy={true} smooth={true} offset={-100} duration={0} >
+      <BiBook/>
+        <p>experience</p>
+      </Link>
+      <Link to="services" spy={true} smooth={true} offset={-100} duration={0} >
+      <RiServiceLine/>
+        <p>services</p>
+      </Link>
+      <Link to="contact" spy={true} smooth={true} offset={-100} duration={0} >
+      <BiMessageSquareDetail/>
+        <p>contact</p>
+      </Link>
     </nav>
   )
 }

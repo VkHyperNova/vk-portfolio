@@ -1,8 +1,8 @@
 import React from 'react'
 import './footer.css'
-import {FaFacebookF} from 'react-icons/fa'
-import {FiInstagram} from 'react-icons/fi'
-import {IoLogoTwitter} from 'react-icons/io'
+import {BsLinkedin} from 'react-icons/bs'
+import {FaGithub} from 'react-icons/fa'
+import {BsFacebook} from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -18,9 +18,9 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://www.linkedin.com/in/veikko-kiis-221978193/" target="_blank"><BsLinkedin/></a>
+        <a href="https://github.com/VkHyperNova" target="_blank"><FaGithub/></a>
+        <a href="https://www.facebook.com/VeikkoKiis/" target="_blank"><BsFacebook/></a>
       </div>
       <div className="footer__copyright">
         <small>&copy; VK Portfolio. All rights reserved.</small>

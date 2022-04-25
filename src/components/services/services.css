@@ -15,10 +15,15 @@
 .service:hover {
     background: var(--color-bg-variant-reverse);
     cursor: default;
+    
 }
 
 .service:hover .service__head{
     background: rgba(105, 133, 212, 0.7);
+}
+
+.service:hover p{
+    color: var(--color-white);
 }
 
 .service__head {
@@ -54,7 +59,9 @@
 .service__list p {
     color: var(--color-light);
     font-size: 0.9rem;
+    transition: .1s;
 }
+
 
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */

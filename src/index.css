@@ -91,16 +91,16 @@ section>h2 {
     display: inline-block;
     background-color: var(--color-primary);
     color: var(--color-white);
+    transition: .2s;
 }
 
-.btn:hover {
-    transform: scale(1.1);   
-    font-weight: bold;
+.btn:hover {  
     background-color: transparent;
+    border-color: var(--color-bg-variant-reverse);
 }
 
 .btn:active {
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 
 img {

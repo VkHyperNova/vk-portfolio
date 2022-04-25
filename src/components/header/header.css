@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 84vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -19,14 +19,10 @@ header {
     cursor: pointer;
     position: relative;
     display: inline-block;
+    transition: 0.2s;
 }
 
-.dl-button {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.1s;
-}
+
 
 .dl-button:after {
     content: '»';
@@ -34,15 +30,15 @@ header {
     opacity: 0;
     top: 1px;
     font-size: 30px;
-    transition: 0.1s;
+    
     transform: rotate(90deg);
 }
 
 .dl-button:hover {
     padding-right: 24px;
     padding-left: 8px;
-    font-weight: bold;
-    transform: scale(1.1);
+    color: var(--color-white);
+    border-color: var(--color-white);   
 }
 
 .dl-button:hover:after {
@@ -51,7 +47,7 @@ header {
 }
 
 .dl-button:active {
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 
 /* CTA */
@@ -76,6 +72,7 @@ header {
 .header__socials a {
     color: var(--color-white);
     font-size: larger;
+    transition: .2s;
 }
 
 .header__socials a:hover {
@@ -106,10 +103,16 @@ header {
     right: -2.3rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    font-weight: 300;
     font-size: 0.9rem;
     color: var(--color-white);
 }
+
+.scroll__down:hover {
+    font-weight: bolder;
+}
+
+
+
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
 @media screen and (max-width: 1024px) {
