@@ -68,17 +68,17 @@ const Services = () => {
       <h2>Services</h2>
       <div className="container services__container">
         {
-          services.map(({ name, desc }) => {
+          services.map(({ name, desc }, index) => {
             return (
-              <article className="service">
+              <article key={index} className="service">
                 <div className="service__head">
                   <h3>{name}</h3>
                 </div>
                 <ul className="service__list">
                 {
-                  desc.map(({ item }) => {
+                  desc.map(({ item }, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                           <BsPatchCheckFill className='service__list-icon' />
                           <p>{item}</p>
                         </li>

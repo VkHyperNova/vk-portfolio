@@ -51,10 +51,10 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           {
-            socials.map(({ name, desc, href, icon }) => {
+            socials.map(({ name, desc, href, icon }, index) => {
               const Icon = icon;
               return (
-                <article className="contact__option">
+                <article key={index} className="contact__option">
                   <Icon className='contact__option-icon' />
                   <h4>{name}</h4>
                   <h5>{desc}</h5>

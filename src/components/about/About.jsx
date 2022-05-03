@@ -23,7 +23,7 @@ const data = [
   },
 ]
 
-const About = () => {
+const About = () => { 
   return (
     <section id='about'>
       <h5>Get To Know</h5>
@@ -31,16 +31,16 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="ME" />
           </div>
         </div>
         <div className="about__content">
           <div className="about__cards">
             {
-              data.map(({ name, desc, icon }) => {
+              data.map(({ name, desc, icon }, index) => {
                 const Icon = icon;
                 return (
-                  <article className="about__card">
+                  <article key={index} className="about__card">
                     <Icon className='about__icon' />
                     <h5>{name}</h5>
                     <small>{desc}</small>

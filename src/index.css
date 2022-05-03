@@ -24,26 +24,16 @@
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;
-    
+    --container-width-sm: 90%;  
 }
-
-
-
 
 html {
-    scroll-behavior: smooth;
-    /* height: 100vh; */
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;   
+    scroll-behavior: smooth;  
 }
 
-section {
+section {   
     margin-bottom: 8rem;
-    /* height: 100vh; */
-    scroll-snap-align: start;
-    scroll-margin-top: 2rem;
-  }
+}
 
 ::-webkit-scrollbar {
     display: none;
@@ -141,9 +131,5 @@ img {
 
     section>h2 {
         margin-bottom: 2rem;
-    }
-
-    html {
-        scroll-snap-type: none;   
     }
 }

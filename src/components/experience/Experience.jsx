@@ -114,16 +114,16 @@ const Experience = () => {
 
       <div className="container experience__container">
         {
-          stack.map(({ name, skills }) => {
+          stack.map(({ name, skills }, index) => {
             return (
-              <div className="experience__frontend">
+              <div key={index} className="experience__frontend">
                 <h3>{name}</h3>
                 <div className="experience__content">
                   {
-                    skills.map(({ lang, desc, icon }) => {
+                    skills.map(({ lang, desc, icon }, index) => {
                       const Icon = icon;
                       return (
-                        <article className="experience__details">
+                        <article key={index} className="experience__details">
                           <div>
                             <Icon className='experience__details-language-icon' />
                             <h4>{lang}</h4>
