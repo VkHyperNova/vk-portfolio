@@ -1,46 +1,6 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.png'
-
-const data = [
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-]
-
+import PortfolioItems from './portfolioItems'
 
 const Portfolio = () => {
   return (
@@ -49,7 +9,7 @@ const Portfolio = () => {
       <h2>Porfolio</h2>
       <div className="container portfolio__container">
         {
-          data.map(({ image, title, github, demo }, index) => {
+          PortfolioItems.map(({ image, title, github, demo }, index) => {
             return (
               <article key={index} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -58,7 +18,7 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                  <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
                 </div>
               </article>
             )

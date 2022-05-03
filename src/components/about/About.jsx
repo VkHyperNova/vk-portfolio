@@ -1,27 +1,7 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/mina.jpg'
-import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
-import { VscFolderLibrary } from 'react-icons/vsc'
-
-const data = [
-  {
-    name: 'Experience',
-    desc: '3+ Years Coding',
-    icon: FaAward
-  },
-  {
-    name: 'Clients',
-    desc: '~3 Clients',
-    icon: FiUsers
-  },
-  {
-    name: 'Projects',
-    desc: '5+ Completed',
-    icon: VscFolderLibrary
-  },
-]
+import AboutItems, {aboutTextp1, aboutTextp2, aboutTextp3} from './aboutItems'
 
 const About = () => { 
   return (
@@ -37,7 +17,7 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             {
-              data.map(({ name, desc, icon }, index) => {
+              AboutItems.map(({ name, desc, icon }, index) => {
                 const Icon = icon;
                 return (
                   <article key={index} className="about__card">
@@ -49,18 +29,7 @@ const About = () => {
               })
             }
           </div>
-          <p>My name is Veikko and I love coding (problem-solving).
-            I learn new things every day.
-            Every project teaches me something new.
-            I learn by doing.
-            Most of my project are my own ideas.
-            I like backend stuff more than frontend.
-            But I can do both. <br /><br />
-            My Goal is to be a Fullstack developer one day.
-            But I need more experience for that.
-            If your stack has some framework or language that is not listed on my portfolio.
-            No Problem! Give me time and I will learn it from scratch.<br /><br />
-            Currently I am looking for a job. I also can do freelancing.</p>
+          <p>{aboutTextp1}<br/><br/>{aboutTextp2}<br/><br/>{aboutTextp3}</p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>

@@ -1,18 +1,19 @@
 import React from 'react'
-import {BsLinkedin} from 'react-icons/bs'
-import {FaGithub} from 'react-icons/fa'
-import {BsFacebook} from 'react-icons/bs'
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from 'react-tooltip'
+import socialsIcons from './headerSocialsItems'
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-        <a data-tip="Linkedin" href="https://www.linkedin.com/in/veikko-kiis-221978193/" target="_blank"><BsLinkedin/></a>
-        <ReactTooltip place="top" type="dark" effect="float"/>
-        <a data-tip="Github" href="https://github.com/VkHyperNova" target="_blank"><FaGithub/></a>
-        <ReactTooltip place="top" type="dark" effect="float"/>
-        <a data-tip="Facebook" href="https://www.facebook.com/VeikkoKiis/" target="_blank"><BsFacebook /></a>
-        <ReactTooltip place="top" type="dark" effect="float"/>
+      {
+        socialsIcons.map(({ name, url, icon }, index) => {
+          const Icon = icon;
+          return (
+            <a key={index} data-tip={name} href={url} target="_blank" rel="noopener noreferrer"><Icon /></a>
+          )
+        })
+      }
+      <ReactTooltip place="top" type="dark" effect="float" />
     </div>
   )
 }
