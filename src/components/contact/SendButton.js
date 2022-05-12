@@ -12,10 +12,12 @@ const AnimatedButton = () => {
         var message = document.getElementById('message').value;
 
 
-        if (name !== "", email !== "", message !== "") {
+        if (name !== "" || email !== "" || message !== "") {
+            /* Send */
             setSend(true);
             setTimeout(() => setSend(false), 1000);
         } else {
+            /* Shake */
             setShake(true);
             setTimeout(() => setShake(false), 1000);
         }

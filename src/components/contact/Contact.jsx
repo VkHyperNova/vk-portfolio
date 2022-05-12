@@ -35,7 +35,7 @@ const Contact = () => {
                   <Icon className='contact__option-icon' />
                   <h4>{name}</h4>
                   <h5>{desc}</h5>
-                  <a href={href} target="_blank">Send a Message</a>
+                  <a href={href}>Send a Message</a>
                 </article>
               )
             })

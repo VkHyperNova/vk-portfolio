@@ -11,7 +11,7 @@
     "react": "*",
     "react-dom": "*",
     "react-icons": "^4.3.1",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.7",
     "react-tooltip": "^4.2.21",
     "react-typical": "^0.1.3",
