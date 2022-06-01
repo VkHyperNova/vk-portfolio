@@ -6,9 +6,16 @@
 
 .experience__container>div {
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
+    padding: 3rem 5rem;
     border-radius: 1rem;
     transition: var(--transition);
+}
+
+.experience__container>div h3 {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: var(--color-light);
+    transition: .2s;
 }
 
 .experience__container>div:hover {
@@ -16,25 +23,20 @@
     cursor: default;
 }
 
-.experience__container>div:hover .experience__details-language-icon {
+.experience__container>div:hover h3 {
     color: var(--color-white);
+    transform: scale(1.2);
 }
 
-.experience__container>div h3 {
-    text-align: left;
-    margin-bottom: 5rem;
-    color: var(--color-white);
+.experience__details {
+    
 }
 
 .experience__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-}
-
-.experience__details {
-    display: flex;
-    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    row-gap: 3rem;   
 }
 
 .experience__details-icon {
@@ -74,5 +76,14 @@
     .experience__container>div {
         width: var(--container-width-sm);
         padding: 2rem 1rem;
+    }
+
+    .experience__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 3rem;
+        row-gap: 2rem;
+        gap: 3rem;
+        
     }
 }

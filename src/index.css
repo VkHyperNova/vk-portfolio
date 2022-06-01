@@ -29,10 +29,13 @@
 
 html {
     scroll-behavior: smooth;  
+    scroll-snap-type: y proximity;   
 }
 
 section {   
     margin-bottom: 8rem;
+    scroll-snap-align: start;
+    scroll-margin-top: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -121,6 +124,10 @@ img {
     section {
         margin-top: 6rem;
     }
+    
+    html {  
+        scroll-snap-type: none;   
+    }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
@@ -131,5 +138,9 @@ img {
 
     section>h2 {
         margin-bottom: 2rem;
+    }
+
+    html {  
+        scroll-snap-type: none;   
     }
 }

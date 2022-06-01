@@ -13,9 +13,6 @@ const servicesItems = [
         {
           item: 'Mobile apps'
         },
-        {
-          item: 'SaaS (Coming Soon)'
-        },
       ]
     },
     {

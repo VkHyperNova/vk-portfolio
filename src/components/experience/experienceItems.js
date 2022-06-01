@@ -1,103 +1,93 @@
 import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
 import { DiCss3, DiJqueryLogo } from 'react-icons/di'
 import { SiJavascript, SiBootstrap, SiReact, SiAngular, SiPostgresql, SiExpress, SiGoland, SiPython, SiDjango } from 'react-icons/si'
-import { RiPsychotherapyLine } from 'react-icons/ri'
 import { IoLogoNodejs } from 'react-icons/io'
 import { BsWordpress } from 'react-icons/bs'
 
+
 const experienceItems = [
     {
-      name: 'Frontend Development',
+      name: 'Frontend',
       skills: [
         {
           lang: 'HTML',
-          desc: 'Experienced',
+          desc: 'Language',
           icon: AiFillHtml5
         },
         {
           lang: 'CSS',
-          desc: 'Experienced',
+          desc: 'Language',
           icon: DiCss3
         },
         {
           lang: 'Javascript',
-          desc: 'Experienced',
+          desc: 'Language',
           icon: SiJavascript
         },
         {
           lang: 'Bootstrap',
-          desc: 'Experienced',
+          desc: 'Library',
           icon: SiBootstrap
         },
         {
           lang: 'jQuery',
-          desc: 'Experienced',
+          desc: 'Library',
           icon: DiJqueryLogo
         },
         {
-          lang: 'React JS',
-          desc: 'Some Experience',
+          lang: 'React',
+          desc: 'Framework',
           icon: SiReact
         },
         {
           lang: 'Angular JS',
-          desc: 'Some Experience',
+          desc: 'Framework',
           icon: SiAngular
-        },
-        {
-          lang: 'Other JS Libraries',
-          desc: 'Some Experience, Learning',
-          icon: RiPsychotherapyLine
         }
       ]
     },
     {
-      name: 'Backend Development',
+      name: 'Backend',
       skills: [
         {
           lang: 'MySQL',
-          desc: 'Experienced',
+          desc: 'Database',
           icon: AiOutlineConsoleSql
         },
         {
           lang: 'PostgreSQL',
-          desc: 'Experienced',
+          desc: 'Database',
           icon: SiPostgresql
         },
         {
           lang: 'Node JS',
-          desc: 'Experienced',
+          desc: 'Framework',
           icon: IoLogoNodejs
         },
         {
           lang: 'Express JS',
-          desc: 'Experienced',
+          desc: 'Framework',
           icon: SiExpress
         },
         {
-          lang: 'GO LANGUAGE',
-          desc: 'Experienced',
+          lang: 'GOLANG',
+          desc: 'Language',
           icon: SiGoland
         },
         {
           lang: 'Python',
-          desc: 'Experienced',
+          desc: 'Language',
           icon: SiPython
         },
         {
           lang: 'Django',
-          desc: 'Some Experience',
+          desc: 'Framework',
           icon: SiDjango
         },
         {
-          lang: 'Wordpress (PHP)',
-          desc: 'Some Experience',
+          lang: 'Wordpress',
+          desc: 'CMS',
           icon: BsWordpress
-        },
-        {
-          lang: 'C# and Java',
-          desc: 'Some Experience. Learning',
-          icon: RiPsychotherapyLine
         }
       ]
     } 
