@@ -1,41 +1,18 @@
-import IMG1 from '../../assets/portfolio1.png'
+import PROJECT_PORTFOOLIO from '../../assets/Projects/portfolio.png'
+import PROJECT_IKOMIX from '../../assets/Projects/ikomix.png'
 
 const PortfolioItems = [
   {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    image: PROJECT_PORTFOOLIO,
+    title: 'Portfoolio',
+    github: 'https://github.com/VkHyperNova/vk-portfolio',
+    demo: 'https://vk-dev.eu/'
   },
   {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
-  },
-  {
-    image: IMG1,
-    title: 'Test Project 1',
-    github: 'https://github.com',
-    demo: 'https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization'
+    image: PROJECT_IKOMIX,
+    title: 'IKOMIX OÜ',
+    github: 'https://github.com/VkHyperNova/ikomix',
+    demo: 'http://www.ikomix.ee/'
   },
 ]
 

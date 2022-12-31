@@ -24,7 +24,7 @@ const AnimatedButton = () => {
     }
 
     return (
-        <button onClick={animate} className={"btn " + (send ? `send` : null) + " " +  (shake ? `shake` : null)}>Send Message</button>
+        <button onClick={animate} className={"btn " + (send ? `send` : null) + " " +  (shake ? `shake` : null)}>Send Message (DISABLED. WORKING ON IT)</button>
     );
 
 }

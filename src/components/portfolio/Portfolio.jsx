@@ -13,11 +13,11 @@ const Portfolio = () => {
             return (
               <article key={index} className="portfolio__item">
                 <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
+                  <img src={image} alt={title} height={300} width={300}/>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn'>Github</a>
+                  <a href={github} target='_blank' rel="noopener noreferrer" className='btn'>Github</a>
                   <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
                 </div>
               </article>
