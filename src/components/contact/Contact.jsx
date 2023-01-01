@@ -11,7 +11,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_e6c211p', 'template_cnr57gj', form.current, 'iKSWrwILeomgi7IYC')
+    emailjs.sendForm('service_e6c211p', 'template_cnr57gj', form.current, 'OwEFJ_V9Wg0AgAF55')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -42,9 +42,9 @@ const Contact = () => {
           }
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" id='name' placeholder='Your Name' required />
-          <input type="email" id='email' placeholder='Your Email' required />
-          <textarea id="message" rows="7" placeholder='Your Message' required></textarea>
+          <input type="text" name='name' id='name' placeholder='Your Name' required />
+          <input type="email" name='email'  id='email' placeholder='Your Email' required />
+          <textarea name="message" id="message" rows="7" placeholder='Your Message' required></textarea>
           <AnimatedButton/>
         </form>
       </div>
