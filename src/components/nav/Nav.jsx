@@ -10,7 +10,7 @@ const Nav = () => {
         navItems.map(({ name, icon }, index) => {
           const Icon = icon;
           return (
-            <Link key={index} to={name} spy={true} smooth={true} offset={-30} duration={0}>
+            <Link key={index} to={name} spy={true} smooth={true} offset={-50} duration={0}>
               <Icon /><p>{name}</p>
             </Link>
           )   
