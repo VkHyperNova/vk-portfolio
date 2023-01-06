@@ -30,7 +30,7 @@ header {
     opacity: 0;
     top: 1px;
     font-size: 30px;
-    
+
     transform: rotate(90deg);
 }
 
@@ -38,7 +38,7 @@ header {
     padding-right: 24px;
     padding-left: 8px;
     color: var(--color-white);
-    border-color: var(--color-white);   
+    border-color: var(--color-white);
 }
 
 .dl-button:hover:after {
@@ -76,11 +76,11 @@ header {
 }
 
 .header__socials a:hover {
-    transform: scale(1.5);   
+    transform: scale(1.5);
 }
 
 /* Line */
-.header__socials::after{
+.header__socials::after {
     content: "";
     width: 3px;
     height: 2rem;
@@ -94,7 +94,7 @@ header {
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 2rem;
-  
+
 }
 
 /* Scroll down */
@@ -111,6 +111,75 @@ header {
     font-weight: bolder;
 }
 
+/* Animations */
+
+
+  
+
+.shrink-text-animation {
+    animation: shrink-text 2s;
+  }
+  
+  @keyframes shrink-text {
+    from {
+      font-size: 5em;
+    }
+    to {
+        font-size: 0.83em;
+    }
+  }
+
+/* old animation
+.greeting-animation {
+    opacity: 0;
+    font-size: 2em;
+    color: white;
+    transform: translateY(-100%);
+    animation: fall-in 1s ease-in-out forwards;
+}
+
+@keyframes fall-in {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        font-size: 0.83em;
+    }
+}
+
+.profile-image-animation {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flash-animation {
+    animation: flash 1s linear;
+    animation-delay: 1s;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+*/
+
+
+
 
 
 
@@ -121,7 +190,7 @@ header {
         padding-top: 0rem;
     }
 
-   
+
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
@@ -131,7 +200,8 @@ header {
         padding-top: 0rem;
     }
 
-    .header__socials, .scroll__down {
+    .header__socials,
+    .scroll__down {
         display: none;
     }
 }

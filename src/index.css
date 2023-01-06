@@ -24,15 +24,15 @@
 
     --container-width-lg: 75%;
     --container-width-md: 86%;
-    --container-width-sm: 90%;  
+    --container-width-sm: 90%;
 }
 
 html {
-    scroll-behavior: smooth;  
-    scroll-snap-type: y proximity;   
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
 }
 
-section {   
+section {
     margin-bottom: 8rem;
     scroll-snap-align: start;
     scroll-margin-top: 2rem;
@@ -48,7 +48,42 @@ body {
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
+    background-attachment: fixed;
+
+
+
+    animation: move-bg 100s linear infinite;
 }
+
+@keyframes move-bg {
+    0% {
+        background-position: 0% 0%;
+        background-size: 15%;
+    }
+
+    25% {
+        background-position: 25% 0%;
+        background-size: 20%;
+    }
+
+    50% {
+        background-position: 50% 0%;
+        background-size: 25%;
+    }
+    
+    75% {
+        background-position: 75% 0%;
+        background-size: 20%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+        background-size: 15%;
+    }
+
+}
+
+
 
 /* GENERAL STYLES */
 .container {
@@ -99,7 +134,7 @@ section>h2 {
     transition: .2s;
 }
 
-.btn:hover {  
+.btn:hover {
     background-color: transparent;
     border-color: var(--color-bg-variant-reverse);
 }
@@ -124,9 +159,9 @@ img {
     section {
         margin-top: 6rem;
     }
-    
-    html {  
-        scroll-snap-type: none;   
+
+    html {
+        scroll-snap-type: none;
     }
 }
 
@@ -140,7 +175,7 @@ img {
         margin-bottom: 2rem;
     }
 
-    html {  
-        scroll-snap-type: none;   
+    html {
+        scroll-snap-type: none;
     }
 }

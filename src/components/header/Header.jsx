@@ -10,15 +10,15 @@ const Header = () => {
     <section id="home">
     <header >
       <div className="container header__container"> 
-        <h5 className="text-light">Hello I am</h5>
-        <h1>Veikko Kiis</h1>
-        <h5 className="text-light"><Typical loop={Infinity} wrapper="p" steps={['Programmer', 1000, 'Web-developer', 1000, 'Problem-solver', 1000]}/></h5>
-        <CTA />
-        <HeaderSocials />
-        <div className="me">
-          <img src={ME} alt="me" />
+        <h5 className="text-light shrink-text-animation">Hello I am</h5>
+        {/* <h1 className='flash-animation'>Veikko Kiis</h1>
+        <h5 className="text-light pop-out"><Typical loop={Infinity} wrapper="p" steps={['Programmer', 1000, 'Web-developer', 1000, 'Problem-solver', 1000]}/></h5> */}
+        {/* <CTA />
+        <HeaderSocials /> */}
+        {/* <div className="me">
+          <img src={ME} alt="me" className='profile-image-animation'/>
         </div>
-        <a href="#contact" className="scroll__down">Scroll Down</a>
+        <a href="#contact" className="scroll__down">Scroll Down</a> */}
       </div>
     </header>
     </section>
