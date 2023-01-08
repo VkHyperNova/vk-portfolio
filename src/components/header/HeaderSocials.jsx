@@ -4,7 +4,7 @@ import socialsIcons from './headerSocialsItems'
 
 const HeaderSocials = () => {
   return (
-    <div className="header__socials fade-in-up">
+    <div className="header__socials socials-animation">
       {
         socialsIcons.map(({ name, url, icon }, index) => {
           const Icon = icon;

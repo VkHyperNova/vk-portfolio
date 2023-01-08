@@ -111,72 +111,11 @@ header {
     font-weight: bolder;
 }
 
-/* Animations */
 
 
-  
 
-.shrink-text-animation {
-    animation: shrink-text 2s;
-  }
-  
-  @keyframes shrink-text {
-    from {
-      font-size: 5em;
-    }
-    to {
-        font-size: 0.83em;
-    }
-  }
 
-/* old animation
-.greeting-animation {
-    opacity: 0;
-    font-size: 2em;
-    color: white;
-    transform: translateY(-100%);
-    animation: fall-in 1s ease-in-out forwards;
-}
 
-@keyframes fall-in {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        font-size: 0.83em;
-    }
-}
-
-.profile-image-animation {
-    opacity: 0;
-    transform: translateY(100%);
-    animation: fade-in 1s ease-in-out forwards;
-}
-
-@keyframes fade-in {
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.flash-animation {
-    animation: flash 1s linear;
-    animation-delay: 1s;
-  }
-  
-  @keyframes flash {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-*/
 
 
 

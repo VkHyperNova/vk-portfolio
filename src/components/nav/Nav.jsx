@@ -5,7 +5,7 @@ import navItems from './navItems'
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className='nav-animation'>
       {
         navItems.map(({ name, icon }, index) => {
           const Icon = icon;

@@ -58,27 +58,27 @@ body {
 @keyframes move-bg {
     0% {
         background-position: 0% 0%;
-        background-size: 15%;
+        background-size: 10%;
     }
 
     25% {
         background-position: 25% 0%;
-        background-size: 20%;
+        background-size: 11%;
     }
 
     50% {
         background-position: 50% 0%;
-        background-size: 25%;
+        background-size: 10%;
     }
-    
+
     75% {
         background-position: 75% 0%;
-        background-size: 20%;
+        background-size: 11%;
     }
 
     100% {
         background-position: 100% 0%;
-        background-size: 15%;
+        background-size: 10%;
     }
 
 }
@@ -148,6 +148,102 @@ img {
     width: 100%;
     object-fit: cover;
 }
+
+/* Animations */
+
+.greeting-animation {
+    animation: fade-in-big 1s;
+    animation-fill-mode: backwards;
+}
+
+.name-animation {
+    animation: fade-in-small 1s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+.do-animation {
+    animation: fade-in-big 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.cta-left-animation {
+    animation: pop-out 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+.cta-right-animation {
+    animation: pop-out 1s;
+    animation-delay: 3.1s;
+    animation-fill-mode: backwards;
+}
+
+.socials-animation {
+    animation: pop-out 1s;
+    animation-delay: 3.2s;
+    animation-fill-mode: backwards;
+}
+
+.picture-animation {
+    animation: pop-out 1s;
+    animation-delay: 3.3s;
+    animation-fill-mode: backwards;
+}
+
+
+.scrolldown-animation {
+    animation: pop-out 1s;
+    animation-delay: 3.4s;
+    animation-fill-mode: backwards;
+}
+
+.nav-animation {
+    animation: pop-out 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: backwards;
+}
+
+/* KEY FRAMES */
+
+@keyframes fade-in-small {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-big {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pop-out {
+    0% {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
