@@ -1,6 +1,7 @@
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
 import { BsFacebook } from 'react-icons/bs'
+import { SiCodewars } from 'react-icons/si'
 
 const socialsIcons = [
     {
@@ -12,6 +13,11 @@ const socialsIcons = [
       name: 'Github',
       url: 'https://github.com/VkHyperNova',
       icon: FaGithub
+    },
+    {
+      name: 'CodeWars',
+      url: 'https://www.codewars.com/users/VkHyperNova',
+      icon: SiCodewars
     },
     {
       name: 'Facebook',

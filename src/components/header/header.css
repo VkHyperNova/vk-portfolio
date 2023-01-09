@@ -10,45 +10,94 @@ header {
     position: relative;
 }
 
-.dl-button {
+
+/*********************************************************** Buttons ***********************************************************/
+.talk-button, .dl-button {
     width: max-content;
-    color: var(--color-primary);
+    color: var(--color-white);
     padding: 0.75rem 1.2rem;
     border-radius: 0.4rem;
-    border: 1px solid var(--color-primary);
+    border: 2px solid var(--color-primary);
     cursor: pointer;
     position: relative;
     display: inline-block;
     transition: 0.2s;
 }
 
+.talk-button:hover, .dl-button:hover {
+    border-color: var(--color-light);
+    color: var(--color-primary);
+    transition: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+.talk-button:active, .dl-button:active {
+    transform: scale(0.9);
+}
+
+/*********************************************************** Let's Talk Button ***********************************************************/
+
+.talk-button:after {
+    content: '»';
+    white-space: pre;
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+}
+
+.talk-button:hover:after {
+    opacity: 1;
+    color: var(--color-primary);
+    animation: send-msg 1s linear infinite;
+}
+
+ @keyframes send-msg {
+    0% {
+        opacity: 0.1;
+        transform: translateX(-300%) translateY(1rem);  
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%) translateY(1rem);
+        opacity: 0.1;
+    }
+ }
+
+/*********************************************************** Download Button ***********************************************************/
 
 
 .dl-button:after {
-    content: '»';
+    content: '\A»';
+    white-space: pre;
     position: absolute;
     opacity: 0;
-    top: 1px;
-    font-size: 30px;
-
-    transform: rotate(90deg);
+    font-size: 50px;
 }
 
-.dl-button:hover {
-    padding-right: 24px;
-    padding-left: 8px;
-    color: var(--color-white);
-    border-color: var(--color-white);
-}
 
 .dl-button:hover:after {
     opacity: 1;
-    right: 5px;
+    color: var(--color-primary);
+    animation: download 1s linear infinite;
 }
 
-.dl-button:active {
-    transform: translateY(2px);
+@keyframes download {
+    0% {
+        opacity: 0.1;
+        transform: translateY(-10%) rotate(90deg);  
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(10%) rotate(90deg);
+        opacity: 0.1;
+    }
 }
+
+
 
 /* CTA */
 .cta {
@@ -85,6 +134,7 @@ header {
     width: 3px;
     height: 2rem;
     background: var(--color-white);
+    animation: fade-in-big 1s;
 }
 
 /* ME */
@@ -110,17 +160,6 @@ header {
 .scroll__down:hover {
     font-weight: bolder;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
 @media screen and (max-width: 1024px) {

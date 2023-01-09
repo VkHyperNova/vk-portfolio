@@ -4,12 +4,12 @@ import socialsIcons from './headerSocialsItems'
 
 const HeaderSocials = () => {
   return (
-    <div className="header__socials socials-animation">
+    <div className="header__socials">
       {
         socialsIcons.map(({ name, url, icon }, index) => {
           const Icon = icon;
           return (
-            <a key={index} data-tip={name} href={url} target="_blank" rel="noopener noreferrer"><Icon /></a>
+            <a key={index} data-tip={name} href={url} target="_blank" rel="noopener noreferrer" className='socials-animation'><Icon /></a>
           )
         })
       }

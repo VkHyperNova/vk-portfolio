@@ -28,14 +28,14 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    /* scroll-behavior: smooth;
+    scroll-snap-type: y proximity; */
 }
 
 section {
     margin-bottom: 8rem;
-    scroll-snap-align: start;
-    scroll-margin-top: 2rem;
+   /*  scroll-snap-align: start;
+    scroll-margin-top: 2rem; */
 }
 
 ::-webkit-scrollbar {
@@ -47,12 +47,14 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
     background-attachment: fixed;
+    background-image: url(../src/assets/bg-picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-
-
-    animation: move-bg 100s linear infinite;
+    /* animation: move-bg 100s linear infinite;
+    animation-fill-mode: backwards;
+    animation-delay: 2s; */
 }
 
 @keyframes move-bg {
@@ -149,100 +151,176 @@ img {
     object-fit: cover;
 }
 
-/* Animations */
+/******************************************************************** Animations ********************************************************************/
 
 .greeting-animation {
-    animation: fade-in-big 1s;
-    animation-fill-mode: backwards;
+    animation: intro-anim 1s, change-color-to-light 1s;
+    animation-delay: 0s, 2s;
+    animation-fill-mode: backwards, forwards;
+    
 }
 
 .name-animation {
-    animation: fade-in-small 1s;
-    animation-delay: .5s;
+    animation: intro-anim 1s;
     animation-fill-mode: backwards;
 }
 
 .do-animation {
-    animation: fade-in-big 2s;
-    animation-delay: 1.5s;
+    animation: do-anim 1s, change-color-to-light 1s;
+    animation-delay: .5s, 2s;
+    animation-fill-mode: backwards, forwards;
+}
+
+.download-cv-animation {
+    animation: left-in 1s;
+    animation-delay: .3s;
     animation-fill-mode: backwards;
 }
 
-.cta-left-animation {
-    animation: pop-out 1s;
-    animation-delay: 3s;
-    animation-fill-mode: backwards;
-}
-
-.cta-right-animation {
-    animation: pop-out 1s;
-    animation-delay: 3.1s;
+.talk-btn-animation {
+    animation: right-in 1s;
+    animation-delay: .3s;
     animation-fill-mode: backwards;
 }
 
 .socials-animation {
-    animation: pop-out 1s;
-    animation-delay: 3.2s;
-    animation-fill-mode: backwards;
-}
-
-.picture-animation {
-    animation: pop-out 1s;
-    animation-delay: 3.3s;
+    animation: fade-in-big 1s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
 
-.scrolldown-animation {
-    animation: pop-out 1s;
-    animation-delay: 3.4s;
-    animation-fill-mode: backwards;
+.animation-blinker {
+    animation: blinker 1s linear infinite, rotate-to-infinity 5s linear infinite;
+    animation-delay: 1s, 1s;
+    animation-fill-mode: backwards, backwards;
 }
 
-.nav-animation {
-    animation: pop-out 1s;
-    animation-delay: 3.5s;
-    animation-fill-mode: backwards;
-}
+
+
+
 
 /* KEY FRAMES */
 
-@keyframes fade-in-small {
+@keyframes intro-anim {
     0% {
         opacity: 0;
-        transform: scale(0.2);
+        transform: translateY(-200%) rotateX(-360deg);
     }
 
     100% {
         opacity: 1;
+    }
+}
+
+
+@keyframes do-anim {
+    0% {
+        opacity: 0;
+        color: #fff;
+        transform: translateY(200%) rotateX(90deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes change-color-to-light {
+    0% {
+        
+        color: #fff;
+    }
+
+    100% {
+        color: var(--color-light);
+    }
+}
+
+@keyframes left-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%) rotate(-360deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes right-in {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) rotateY(720deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
 
 @keyframes fade-in-big {
     0% {
         opacity: 0;
-        transform: scale(1.5);
+        transform: scale(-1);
     }
-
+    50% {
+        transform: scale(2);
+        color: var(--color-primary);
+    }
     100% {
         opacity: 1;
     }
+    
 }
 
-@keyframes pop-out {
+/**tset*/
+@keyframes matrix-test {
+    0% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      50% {
+        transform: matrix(0.999, 0.01, 0.01, 0.99, 0, 0);
+      }
+      100% {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+}
+
+
+@keyframes blinker {
+
     0% {
         opacity: 0;
-        transform: scale(0.2);
     }
 
     50% {
-        transform: scale(1.2);
+        opacity: 1;
     }
 
     100% {
-        opacity: 1;
+        opacity: 0;
     }
 }
+
+@keyframes rotate-to-infinity {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+
+
 
 
 
@@ -256,9 +334,9 @@ img {
         margin-top: 6rem;
     }
 
-    html {
+    /* html {
         scroll-snap-type: none;
-    }
+    } */
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
@@ -270,8 +348,8 @@ img {
     section>h2 {
         margin-bottom: 2rem;
     }
-
+/* 
     html {
         scroll-snap-type: none;
-    }
+    } */
 }
