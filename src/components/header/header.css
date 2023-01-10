@@ -27,8 +27,22 @@ header {
 .talk-button:hover, .dl-button:hover {
     border-color: var(--color-light);
     color: var(--color-primary);
-    transition: .1s;
-    transition-timing-function: ease-in-out;
+    /* transition: .1s;
+    transition-timing-function: ease-in-out; */
+}
+
+@keyframes btn-pulse {
+    0% {
+        opacity: 0.1;
+        transform: translateY(-20%) rotate(90deg);  
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15%) rotate(90deg);
+        opacity: 0.1;
+    }
 }
 
 .talk-button:active, .dl-button:active {
@@ -38,29 +52,29 @@ header {
 /*********************************************************** Let's Talk Button ***********************************************************/
 
 .talk-button:after {
-    content: '»';
+    content: 'Hello!';
     white-space: pre;
     position: absolute;
     opacity: 0;
-    font-size: 50px;
+    font-size: 1rem;
 }
 
 .talk-button:hover:after {
     opacity: 1;
-    color: var(--color-primary);
-    animation: send-msg 1s linear infinite;
+    color: var(--color-violet);
+    animation: send-msg 2s linear infinite;
 }
 
  @keyframes send-msg {
     0% {
         opacity: 0.1;
-        transform: translateX(-300%) translateY(1rem);  
+        transform: translateY(-100%) translateX(3rem) rotate(90deg);  
     }
     50% {
         opacity: 1;
     }
     100% {
-        transform: translateX(100%) translateY(1rem);
+        transform: translateY(300%) translateX(3rem) rotate(-90deg);
         opacity: 0.1;
     }
  }
@@ -79,20 +93,20 @@ header {
 
 .dl-button:hover:after {
     opacity: 1;
-    color: var(--color-primary);
+    color: var(--color-violet-transparent);
     animation: download 1s linear infinite;
 }
 
 @keyframes download {
     0% {
         opacity: 0.1;
-        transform: translateY(-10%) rotate(90deg);  
+        transform: translateY(-20%) rotate(90deg);  
     }
     50% {
         opacity: 1;
     }
     100% {
-        transform: translateY(10%) rotate(90deg);
+        transform: translateY(15%) rotate(90deg);
         opacity: 0.1;
     }
 }
@@ -101,7 +115,6 @@ header {
 
 /* CTA */
 .cta {
-    margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
@@ -135,6 +148,8 @@ header {
     height: 2rem;
     background: var(--color-white);
     animation: fade-in-big 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
 }
 
 /* ME */

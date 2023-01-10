@@ -14,6 +14,8 @@
     --color-bg: #000000;
     --color-bg-variant: linear-gradient(0deg, rgba(130, 212, 105, 0.5) 0%, rgba(33, 29, 1, 0.5) 80%);
     --color-bg-variant-reverse: linear-gradient(0deg, rgba(105, 133, 212, 0.7) 0%, rgba(33, 29, 1, 0.7) 80%);
+    --color-violet-transparent: rgba(150, 67, 228, 0.5);
+    --color-violet: rgba(150, 67, 228, 1);
 
     --color-primary: #19bd4d;
     --color-secondary: rgba(130, 212, 105, 0.5);
@@ -27,15 +29,9 @@
     --container-width-sm: 90%;
 }
 
-html {
-    /* scroll-behavior: smooth;
-    scroll-snap-type: y proximity; */
-}
 
 section {
     margin-bottom: 8rem;
-   /*  scroll-snap-align: start;
-    scroll-margin-top: 2rem; */
 }
 
 ::-webkit-scrollbar {
@@ -151,93 +147,124 @@ img {
     object-fit: cover;
 }
 
-/******************************************************************** Animations ********************************************************************/
 
-.greeting-animation {
-    animation: intro-anim 1s, change-color-to-light 1s;
+/****************************************************************************************************************************************************/
+/******************************************************************** Animations ********************************************************************/
+/****************************************************************************************************************************************************/
+/* INTRO */
+
+.intro_container {
+    height: 8rem;
+    padding: 1rem;
+}
+
+/****************************************************************************************************************************************************/
+/* hello */
+
+.hello-animation {
+    animation: hello-animation-1 1s, change-color-to-light 1s;
     animation-delay: 0s, 2s;
     animation-fill-mode: backwards, forwards;
-    
 }
 
+@keyframes hello-animation-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) rotateX(-180deg);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/****************************************************************************************************************************************************/
+/* name */
 .name-animation {
-    animation: intro-anim 1s;
+    animation: name-animation-2 1s;
     animation-fill-mode: backwards;
 }
 
-.do-animation {
-    animation: do-anim 1s, change-color-to-light 1s;
-    animation-delay: .5s, 2s;
+@keyframes name-animation-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%) rotateX(180deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/****************************************************************************************************************************************************/
+/* greeting */
+.greeting-animation {
+    animation: greeting-animation-3 1s, change-color-to-light 1s;
+    animation-delay: 0s, 2s;
     animation-fill-mode: backwards, forwards;
 }
 
+@keyframes greeting-animation-3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/****************************************************************************************************************************************************/
+/* code */
+.code-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: code-animation-3 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes code-animation-3 {
+    0% {
+        transform: rotateZ(2160deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+/****************************************************************************************************************************************************/
+/* React Typical */
+.styles_typicalWrapper__1_Uvh::after {
+    content: "" !important;
+    /* Cursor Removed */
+    animation: none;
+    /* Animation removed */
+}
+
+
+
+/****************************************************************************************************************************************************/
+/* Download Button */
+
 .download-cv-animation {
-    animation: left-in 1s;
-    animation-delay: .3s;
+    animation: download-cv-animation-5 1s;
+    animation-delay: 3s;
     animation-fill-mode: backwards;
 }
 
-.talk-btn-animation {
-    animation: right-in 1s;
-    animation-delay: .3s;
-    animation-fill-mode: backwards;
-}
-
-.socials-animation {
-    animation: fade-in-big 1s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
-
-
-.animation-blinker {
-    animation: blinker 1s linear infinite, rotate-to-infinity 5s linear infinite;
-    animation-delay: 1s, 1s;
-    animation-fill-mode: backwards, backwards;
-}
-
-
-
-
-
-/* KEY FRAMES */
-
-@keyframes intro-anim {
-    0% {
-        opacity: 0;
-        transform: translateY(-200%) rotateX(-360deg);
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-@keyframes do-anim {
-    0% {
-        opacity: 0;
-        color: #fff;
-        transform: translateY(200%) rotateX(90deg);
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes change-color-to-light {
-    0% {
-        
-        color: #fff;
-    }
-
-    100% {
-        color: var(--color-light);
-    }
-}
-
-@keyframes left-in {
+@keyframes download-cv-animation-5 {
     0% {
         opacity: 0;
         transform: translateX(-100%) rotate(-360deg);
@@ -249,7 +276,16 @@ img {
     }
 }
 
-@keyframes right-in {
+/****************************************************************************************************************************************************/
+/* Let's Talk Button */
+
+.talk-btn-animation {
+    animation: talk-btn-animation-6 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes talk-btn-animation-6 {
     0% {
         opacity: 0;
         transform: translateX(100%) rotateY(720deg);
@@ -261,63 +297,124 @@ img {
     }
 }
 
-@keyframes fade-in-big {
+/****************************************************************************************************************************************************/
+/* Social Networks */
+
+.socials-animation {
+    animation: socials-animation-7 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes socials-animation-7 {
     0% {
         opacity: 0;
         transform: scale(-1);
     }
+
     50% {
         transform: scale(2);
         color: var(--color-primary);
     }
+
     100% {
         opacity: 1;
     }
-    
 }
+
+/****************************************************************************************************************************************************/
+/* Scroll Down Button */
+
+.scroll-down-animation {
+    animation: blink-animation 1s linear infinite, rotate-90deg 5s ease-in infinite;
+    animation-delay: 3s, 3s;
+    animation-fill-mode: backwards, backwards;
+}
+
+@keyframes blink-animation {
+
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotate-90deg {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+/****************************************************************************************************************************************************/
+/* navigation */
+
+
+/****************************************************************************************************************************************************/
+
+@keyframes change-color-to-light {
+    0% {
+
+        color: #fff;
+    }
+
+    100% {
+        color: var(--color-light);
+    }
+}
+
+@keyframes change-color-to-violet {
+    0% {
+
+        color: #fff;
+    }
+
+    100% {
+        color: var(--color-violet);
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 /**tset*/
 @keyframes matrix-test {
     0% {
         transform: matrix(1, 0, 0, 1, 0, 0);
-      }
-      50% {
+    }
+
+    50% {
         transform: matrix(0.999, 0.01, 0.01, 0.99, 0, 0);
-      }
-      100% {
+    }
+
+    100% {
         transform: matrix(1, 0, 0, 1, 0, 0);
-      }
-}
-
-
-@keyframes blinker {
-
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
     }
 }
 
-@keyframes rotate-to-infinity {
-    0% {
-        transform: rotate(10deg);
-    }
 
-    50% {
-        transform: rotate(-10deg);
-    }
 
-    100% {
-        transform: rotate(10deg);
-    }
-}
 
 
 
@@ -348,7 +445,8 @@ img {
     section>h2 {
         margin-bottom: 2rem;
     }
-/* 
+
+    /* 
     html {
         scroll-snap-type: none;
     } */
