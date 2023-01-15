@@ -16,106 +16,71 @@ nav {
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(15px);
-    animation: nav-animation 1s;
-    animation-delay: 0s;
+    animation: nav-bg-appear 1s;
+    animation-delay: 1.6s;
     animation-fill-mode: backwards;
+    
 }
 
 /****************************************************************************************************************************************************/
-/* nav items animation one by one */
-
-/* nav a icon-1 */
-nav a:nth-child(1) {
-    animation: nav-animation 1s;
-    animation-delay: 1s;
-    animation-fill-mode: backwards;
-}
-
-/* nav a description-1 */
-nav a:nth-child(1) p {
-    animation: nav-animation 1s;
-    animation-delay: 1.5s;
-    animation-fill-mode: backwards;
-}
-
-/****************************************************************************************************************************************************/
-/* nav a icon-2 */
-nav a:nth-child(2) {
-    animation: nav-animation 1s;
-    animation-delay: 1.5s;
-    animation-fill-mode: backwards;
-}
-
-/* nav a description-2*/
-nav a:nth-child(2) p {
-    animation: nav-animation 1s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-}
-
-/****************************************************************************************************************************************************/
-/* nav a icon-3 */
-nav a:nth-child(3) {
-    animation: nav-animation .5s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-}
-
-/* nav a description-3*/
-nav a:nth-child(3) p {
-    animation: nav-animation .5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: backwards;
-}
-
-/****************************************************************************************************************************************************/
-/* nav a icon-4 */
-nav a:nth-child(4) {
-    animation: nav-animation .5s;
-    animation-delay: 2.5s;
-    animation-fill-mode: backwards;
-}
-
-/* nav a description-4*/
-nav a:nth-child(4) p {
-    animation: nav-animation .5s;
-    animation-delay: 3s;
-    animation-fill-mode: backwards;
-}
-
-/****************************************************************************************************************************************************/
-/* nav a icon-5 */
-nav a:nth-child(5) {
-    animation: nav-animation .5s;
-    animation-delay: 3s;
-    animation-fill-mode: backwards;
-}
-
-/* nav a description-5*/
-nav a:nth-child(5) p {
-    animation: nav-animation .5s;
-    animation-delay: 3.5s;
-    animation-fill-mode: backwards;
-}
-
-/****************************************************************************************************************************************************/
-/* nav a icon-6 */
+/* nav icons animation */
+nav a:nth-child(1),
+nav a:nth-child(2),
+nav a:nth-child(3),
+nav a:nth-child(4),
+nav a:nth-child(5),
 nav a:nth-child(6) {
-    animation: nav-animation .5s;
-    animation-delay: 3.5s;
-    animation-fill-mode: backwards;
+    animation: start-small .1s ease-in, start-color-white 3s, scale-pulse 1s;
+    animation-fill-mode: backwards, backwards, backwards;
 }
 
-/* nav a description-6*/
+/* nav desc animation */
+nav a:nth-child(1) p,
+nav a:nth-child(2) p,
+nav a:nth-child(3) p,
+nav a:nth-child(4) p,
+nav a:nth-child(5) p,
 nav a:nth-child(6) p {
-    animation: nav-animation .5s;
-    animation-delay: 4s;
-    animation-fill-mode: backwards;
+    animation: start-small .1s, start-color-white 1.5s;
+    animation-delay: 1.5s, 1.5s;
+    animation-fill-mode: backwards, backwards;
 }
+
+/* Home icon */
+nav a:nth-child(1) { 
+    animation-delay: 1.5s, 1.5s, 2s;   
+}
+
+/* About icon */
+nav a:nth-child(2) {
+    animation-delay: 1.4s, 1.4s, 2s;
+}
+
+/* Experience icon */
+nav a:nth-child(3) {
+    animation-delay: 1.3s, 1.3s, 2s;
+}
+
+/* Services icon */
+nav a:nth-child(4) {
+    animation-delay: 1.2s, 1.2s, 2s;
+}
+
+/* Portfolio icon */
+nav a:nth-child(5) {
+    animation-delay: 1.1s, 1.1s, 2s;
+}
+
+/* Contact icon */
+nav a:nth-child(6) {
+    animation-delay: 1s, 1s, 2s;
+}
+
+
 
 /****************************************************************************************************************************************************/
 /* navigation keyframes */
-@keyframes nav-animation {
+@keyframes appear {
     0% {
         opacity: 0;
     }
@@ -123,6 +88,36 @@ nav a:nth-child(6) p {
     100% {
         opacity: 1;
     }
+}
+
+
+@keyframes scale-pulse {
+    50% {
+        transform: scale(1.2);
+        color: var(--color-primary);
+    }
+}
+
+@keyframes start-small {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+}
+
+
+@keyframes nav-bg-appear {
+    0% {
+        background: transparent;
+        backdrop-filter: none;
+    }
+}
+
+@keyframes start-color-white {
+    0% {
+        color: white;
+    }
+    
 }
 
 
@@ -145,16 +140,18 @@ nav a:hover {
     transition: .1s;
 }
 
+
 nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
 }
 
-
+/* on click */
 nav a:active {
     background: var(--color-primary);
     transform: translateY(2px);
 }
+
 
 nav a.active:hover {
     transform: scale(1);
