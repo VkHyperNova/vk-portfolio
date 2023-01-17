@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/mina.jpg'
+import ME from '../../assets/mina-no-bg.png'
 import AboutItems, {aboutTextp1, aboutTextp2, aboutTextp3} from './aboutItems'
 
 const About = () => { 
@@ -11,7 +11,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="ME" />
+            <img src={ME} alt="ME" className='about-image'/>
           </div>
         </div>
         <div className="about__content">

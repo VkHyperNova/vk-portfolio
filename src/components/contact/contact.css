@@ -58,6 +58,29 @@ textarea {
     opacity: 1;
 }
 
+/* Send msg button only */
+.btn {
+    width: max-content;
+    color: var(--color-green);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    border: 2px solid var(--color-blue);
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    color: var(--color-white);
+    transition: .2s;
+}
+
+.btn:hover {
+    border-color: var(--color-green);
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
 
 
 input:focus::placeholder,

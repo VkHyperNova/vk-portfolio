@@ -7,14 +7,16 @@
 .about__me {
     width: 100%;
     border-radius: 1rem;
-    background: var(--color-bg-variant);
+    /* background: var(--color-grey); */
     display: grid;
     place-items: center;
     transition: var(--transition);
 }
 
-.about__me:hover {
-    background: var(--color-bg-variant-reverse);     
+.about-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 
 .about__me-image {
@@ -37,20 +39,20 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
+    background: var(--color-grey);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
 }
 
+/* add animation mb?*/
 .about__card:hover{
-    background: var(--color-bg-variant-reverse);
     cursor: default;
 }
 
 .about__card:hover .about__icon {
-    color: var(--color-white);
+   /*  color: var(--color-white); */
     transform: scale(1.5);
 }
 
@@ -65,7 +67,7 @@
 }
 
 .about__icon {
-    color: var(--color-primary);
+    color: var(--color-yellow);
     font-size: 1.4rem;
     margin-bottom: 1rem;
     transition: .1s;

@@ -37,12 +37,12 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: var(--color-green);
+    color: var(--color-black);
 }
 
 nav a:active {
-    background: var(--color-primary);
+    background: var(--color-green);
     transform: translateY(2px);
 }
 
@@ -127,7 +127,7 @@ nav a:nth-child(6) {
 @keyframes navigation-active-animation {
     50% {
         transform: scale(1.2) rotate(-180deg);
-        color: var(--color-primary);
+        color: var(--color-green);
     }
 }
 
