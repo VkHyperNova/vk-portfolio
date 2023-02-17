@@ -16,7 +16,7 @@
 
 :root {
     --color-black: #000000;
-    --color-grey: linear-gradient(0deg, rgba(158, 158, 159, 0.5) 0%, rgba(33, 29, 1, 0.5) 80%);
+    --color-grey: linear-gradient(0deg,  rgba(33, 29, 1, 0.5) 0%, rgba(158, 158, 159, 0.5) 80%);
     --color-green: #19bd4d;
     --color-blue: rgba(66, 136, 228, 0.5);
     --color-white: #fff;

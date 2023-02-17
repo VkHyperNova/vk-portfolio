@@ -49,28 +49,60 @@
 /* add animation mb?*/
 .about__card:hover{
     cursor: default;
+    background-color: black;
+    animation: slide-white ease-in 100s infinite;
+    animation-fill-mode: backwards;
 }
+
+@keyframes slide-white {
+    0% {
+        
+        transition: translateY(100%);
+    }
+}
+
 
 .about__card:hover .about__icon {
    /*  color: var(--color-white); */
     transform: scale(1.5);
+    /* animation: icon-anim 2s alternate-reverse infinite;
+    animation-fill-mode: backwards; */
+}
+
+@keyframes icon-anim {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-620deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
 }
 
 .about__card:hover small {
     color: var(--color-white);
     font-size: 1rem;
+    transition: .5s;
 }
 
 .about__card:hover h5 {
     color: var(--color-light);
     font-size: 0.8rem;
+    transition: .5s;
 }
 
 .about__icon {
     color: var(--color-yellow);
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    transition: .1s;
+    transition: .5s;
 }
 
 .about__card h5 {

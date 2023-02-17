@@ -5,7 +5,7 @@
 }
 
 .experience__container>div {
-    background: var(--color-bg-variant);
+    background: var(--color-grey);
     padding: 3rem 5rem;
     border-radius: 1rem;
     transition: var(--transition);
@@ -19,17 +19,12 @@
 }
 
 .experience__container>div:hover {
-    background: var(--color-bg-variant-reverse);
     cursor: default;
 }
 
 .experience__container>div:hover h3 {
-    color: var(--color-white);
+    color: var(--color-green);
     transform: scale(1.2);
-}
-
-.experience__details {
-    
 }
 
 .experience__content {
@@ -40,12 +35,12 @@
 }
 
 .experience__details-icon {
-    color: var(--color-primary);
+    color: var(--color-green);
 }
 
 .experience__details-language-icon {
     font-size: 2rem;
-    color: var(--color-primary);
+    color: var(--color-green);
     transition: .2s;
 }
 
