@@ -8,7 +8,7 @@ import Portfolio from './components/portfolio/Portfolio'
 /* import Testimonials from './components/testimonials/Testimonials' */
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import P5snow from './p5snow'
+// import P5snow from './p5snow'
 
 
 const App = () => {

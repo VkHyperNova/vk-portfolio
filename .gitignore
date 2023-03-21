@@ -25,3 +25,5 @@ yarn-error.log*
 Vk-readme.txt
 p5snow.jsx
 sketch.js
+
+package-lock.json
