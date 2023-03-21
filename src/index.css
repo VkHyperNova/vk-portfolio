@@ -12,6 +12,7 @@
     box-sizing: 0;
     list-style: none;
     text-decoration: none;
+    font-family:"Times New Roman", Times, serif; 
 }
 
 :root {
@@ -22,6 +23,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-yellow: #e4c021;
+    
 
     --transition: all 400ms ease;
 
@@ -67,15 +69,19 @@ h1 {
     font-size: 2.5rem;
 }
 
-section>h2,
+
 section>h5 {
     text-align: center;
     color: var(--color-green);
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 
 section>h2 {
+    text-align: center;
     color: var(--color-primary);
     margin-bottom: 3rem;
+    font-size: 2rem;
 }
 
 .text-light {
@@ -145,6 +151,7 @@ header {
 /****************************************************************************************************************************************************/
 .talk-button {
     border: 2px solid var(--color-yellow);
+    font-size: 1.5rem;
 }
 
 .talk-button:after {
@@ -503,7 +510,7 @@ header {
 
 
 
-/**tset*/
+/**test*/
 @keyframes matrix-test {
     0% {
         transform: matrix(1, 0, 0, 1, 0, 0);

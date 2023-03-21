@@ -1,5 +1,5 @@
 footer {
-    background: var(--color-primary);
+    background: rgba(53, 50, 50, 0.678);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -34,7 +34,8 @@ footer a {
 }
 
 .footer__socials a {
-    background-image: url(../../../src/assets/bg-texture.png);
+    /* background-image: url(../../../src/assets/bg-texture.png); */
+    font-size: 2.5rem;
     color: var(--color-white);
     padding: 0.8rem;
     border-radius: 0.7rem;
@@ -43,13 +44,11 @@ footer a {
 }
 
 .footer__socials a:hover {
-    
-    transform: scale(1.1);
-    
+    transform: scale(1.1);  
 }
 
 .footer__copyright {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     color: var(--color-bg);
 }
 

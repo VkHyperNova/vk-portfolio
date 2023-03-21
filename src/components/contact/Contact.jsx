@@ -26,21 +26,7 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact__container">
-        <div className="contact__options">
-          {
-            socialsItems.map(({ name, desc, href, icon }, index) => {
-              const Icon = icon;
-              return (
-                <article key={index} className="contact__option">
-                  <Icon className='contact__option-icon' />
-                  <h4>{name}</h4>
-                  <h5>{desc}</h5>
-                  <a href={href}>Send a Message</a>
-                </article>
-              )
-            })
-          }
-        </div>
+        
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' id='name' placeholder='Your Name' required />
           <input type="email" name='email'  id='email' placeholder='Your Email' required />

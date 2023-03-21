@@ -18,6 +18,7 @@ nav {
     animation: navigation-background-animation 1s;
     animation-delay: 2s;
     animation-fill-mode: backwards; 
+    
 }
 
 nav a {
@@ -53,7 +54,7 @@ nav a.active:hover {
 }
 
 nav p {
-    font-size: small;
+    font-size: 1rem;
     margin-top: -0.9rem;
 }
 

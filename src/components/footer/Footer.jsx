@@ -1,8 +1,11 @@
 import React from 'react'
 import './footer.css'
-import {BsLinkedin} from 'react-icons/bs'
-import {FaGithub} from 'react-icons/fa'
-import {BsFacebook} from 'react-icons/bs'
+// import {BsLinkedin} from 'react-icons/bs'
+// import {FaGithub} from 'react-icons/fa'
+// import {BsFacebook} from 'react-icons/bs'
+// import {SiCodewars} from 'react-icons/si'
+import socialsIcons from '../header/headerSocialsItems'
+import ReactTooltip from 'react-tooltip'
 
 const Footer = () => {
   return (
@@ -18,9 +21,16 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/veikko-kiis-221978193/" target="_blank" rel="noopener noreferrer"><BsLinkedin/></a>
-        <a href="https://github.com/VkHyperNova" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
-        <a href="https://www.facebook.com/VeikkoKiis/" target="_blank" rel="noopener noreferrer"><BsFacebook/></a>
+        {
+          socialsIcons.map(({ name, url, icon }, index) => {
+            const Icon = icon;
+            return (
+              <a key={index} data-tip={name} href={url} target="_blank" rel="noopener noreferrer" className='socials-animation'><Icon /></a>
+            )
+          })
+        }
+        <ReactTooltip place="top" type="dark" effect="float" />
+
       </div>
       <div className="footer__copyright">
         <small>&copy; VK Portfolio. All rights reserved.</small>

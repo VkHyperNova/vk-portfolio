@@ -1,8 +1,8 @@
 .container.contact__container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    width: 30%;
+    /* display: grid;
+    grid-template-columns: 30% 58%; */
+    /* gap: 12%; */
 }
 
 .contact__options {
@@ -49,8 +49,14 @@ textarea {
     border-radius: 0.5rem;
     resize: none;
     color: var(--color-white);
-    background: rgba(105, 231, 109, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(105, 231, 109, 0.2);
+    background: transparent;
+    border: 2px solid var(--color-blue);
+    font-size: 1rem;
+}
+
+input:hover,
+textarea:hover {
+    border: 2px solid var(--color-green);
 }
 
 ::placeholder {
@@ -71,6 +77,7 @@ textarea {
     background-color: transparent;
     color: var(--color-white);
     transition: .2s;
+    font-size: 1rem;
 }
 
 .btn:hover {
@@ -138,7 +145,7 @@ button.shake {
 
 .contact__option a:hover {
     font-weight: bolder;
-    transform: scale(1.2);   
+    transform: scale(1.2);
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
