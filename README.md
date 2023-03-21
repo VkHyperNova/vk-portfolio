@@ -1,12 +1,15 @@
 
+
+/* Clone Project */
 ### `git clone https://github.com/VkHyperNova/vk-portfolio.git`
 
+/* Install modules */
 ### `npm install --legacy-peer-deps`
 
-### `npm start`
+/* Start server */
+### `npm start` 
 
-### `npm test`
-
+/* Build */
 ### `npm run build`
 
 
