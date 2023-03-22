@@ -2,39 +2,43 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-}
-
-.service {
-    background: var(--color-bg-variant);
-    border-radius: 0 0 2rem 2rem;
-    height: 400px;  
-    transition: var(--transition);
-}
-
-.service:hover {
-    background: var(--color-bg-variant-reverse);
-    cursor: default;
     
 }
 
-.service:hover .service__head{
-    background: rgba(105, 133, 212, 0.7);
+.service {
+    border-radius: 0 0 2rem 2rem;
+    height: 400px;  
+    transition: var(--transition);
+    border: 2px solid var(--color-blue);
 }
 
-.service:hover p{
+
+
+.service:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--color-yellow);
+}
+
+.service:hover p {
     color: var(--color-white);
 }
 
+.service p:hover {
+    font-weight: 900;
+}
+.service:hover h3 {
+    color: var(--color-green);
+    font-weight: 900;
+}
+
 .service__head {
-    background: var(--color-primary);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .service__head h3 {
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -50,14 +54,14 @@
 }
 
 .service__list-icon {
-    color: var(--color-primary);
+    color: var(--color-green);
     margin-top: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .service__list p {
     color: var(--color-light);
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     transition: .1s;
 }
 

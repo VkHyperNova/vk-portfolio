@@ -1,5 +1,6 @@
 footer {
-    background: rgba(53, 50, 50, 0.678);
+    /* background: rgba(53, 50, 50, 0.678); */
+    /* background: var(--color-blue); */
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -7,8 +8,18 @@ footer {
     scroll-snap-align: start;
 }
 
-footer a {
-    color: var(--color-bg);
+footer .permalinks li a {
+    /* color: var(--color-bg); */
+    color: var(--color-green);
+    font-size: 1.5rem;
+}
+
+footer .permalinks li:hover {
+    transform: scale(1.1);  
+}
+
+footer .permalinks li a:hover {
+    color: white;
 }
 
 .footer__logo {
@@ -16,6 +27,7 @@ footer a {
     font-weight: 500;
     margin-bottom: 2rem;
     display: inline-block;
+    color: white;
 }
 
 .permalinks {
@@ -34,7 +46,6 @@ footer a {
 }
 
 .footer__socials a {
-    /* background-image: url(../../../src/assets/bg-texture.png); */
     font-size: 2.5rem;
     color: var(--color-white);
     padding: 0.8rem;

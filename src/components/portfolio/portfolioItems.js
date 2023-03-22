@@ -1,6 +1,6 @@
 import PROJECT_PORTFOOLIO from '../../assets/Projects/vkportfolio.png'
 import PROJECT_IKOMIX from '../../assets/Projects/ikomix.png'
-import PROJECT_YLKUSAUNAKE from '../../assets/Projects/ylkusaunake.jpg'
+import PROJECT_YLKUSAUNAKE from '../../assets/Projects/ylkusaunake.png'
 
 const PortfolioItems = [
   {

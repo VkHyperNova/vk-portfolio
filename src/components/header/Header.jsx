@@ -9,7 +9,7 @@ const Header = () => {
     <section id="home">
       <header>
         <div className="vk-face-image">
-          <img src={VKFACE} alt="VK FACE"/>
+          <img className='vk-img-fluid' src={VKFACE} alt="VK FACE"/>
         </div>
         <div className="container header__container">
           <div className='intro__container'>

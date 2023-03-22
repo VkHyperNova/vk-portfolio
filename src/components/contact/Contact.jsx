@@ -3,7 +3,6 @@ import './contact.css'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com'
 import AnimatedButton from './SendButton.js'
-import socialsItems from './contactItems';
 
 const Contact = () => {
   const form = useRef();

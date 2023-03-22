@@ -12,14 +12,16 @@ const Portfolio = () => {
           PortfolioItems.map(({ image, title, comment, github, demo }, index) => {
             return (
               <article key={index} className="portfolio__item">
+                
                 <div className="portfolio__item-image">
                   <img src={image} alt={title}/>
                 </div>
                 <h3>{title}</h3>
                 <p>{comment}</p>
+                
                 <div className="portfolio__item-cta">
-                  <a href={github} target='_blank' rel="noopener noreferrer" className='btn'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+                  <a href={github} target='_blank' rel="noopener noreferrer" className='btn btn-primary'>Github</a>
+                  <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">View Page</a>
                 </div>
               </article>
             )

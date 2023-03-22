@@ -10,7 +10,7 @@ import ReactTooltip from 'react-tooltip'
 const Footer = () => {
   return (
     <footer>
-      <a href="#home" className='footer__logo'>VK Portfolio</a>
+      <a href="#home" className='footer__logo'>VK Portfolio</a> 
       <ul className="permalinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -33,7 +33,7 @@ const Footer = () => {
 
       </div>
       <div className="footer__copyright">
-        <small>&copy; VK Portfolio. All rights reserved.</small>
+        <h3>&copy; VK-DEV Portfolio. All rights reserved.</h3>
       </div>
     </footer>
   )

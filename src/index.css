@@ -17,7 +17,6 @@
 
 :root {
     --color-black: #000000;
-    --color-grey: linear-gradient(0deg,  rgba(33, 29, 1, 0.5) 0%, rgba(158, 158, 159, 0.5) 80%);
     --color-green: #19bd4d;
     --color-blue: rgba(66, 136, 228, 0.5);
     --color-white: #fff;
@@ -97,20 +96,31 @@ header {
     overflow: hidden;
 }
 
+
+.vk-face-image {
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    margin: 20px;
+    /* bottom: -150px; */
+    /* margin: auto 0; */
+}
+
+.vk-img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
+
 .header__container {
     text-align: center;
     height: 100%;
     position: relative;
 }
 
-.vk-face-image {
-    position: absolute;
-    z-index: -1;
-}
-
 .intro__container {
     height: 8rem;
     padding: 1rem;
+    
 }
 
 /********************************************************************** HEADER CTA BUTTONS **********************************************************/
@@ -579,6 +589,10 @@ header {
 
 /* MEDIA QUERIES (SMALL DEVICES) MOBILE PHONES */
 @media screen and (max-width: 600px) {
+
+    .vk-face-image {
+        bottom: 300px;
+    }
     .container {
         width: var(--container-width-sm);
     }

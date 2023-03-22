@@ -1,37 +1,7 @@
-.experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.experience__container>div {
-    background: var(--color-grey);
-    padding: 3rem 5rem;
-    border-radius: 1rem;
-    transition: var(--transition);
-}
-
-.experience__container>div h3 {
-    text-align: center;
-    margin-bottom: 5rem;
-    color: var(--color-light);
-    transition: .2s;
-}
-
-.experience__container>div:hover {
-    cursor: default;
-}
-
-.experience__container>div:hover h3 {
-    color: var(--color-green);
-    transform: scale(1.2);
-}
-
 .experience__content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-    row-gap: 3rem;   
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 3rem;  
 }
 
 .experience__details-icon {
@@ -39,9 +9,11 @@
 }
 
 .experience__details-language-icon {
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--color-green);
-    transition: .2s;
+}
+.experience__details p {
+    color: var(--color-light);
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */
