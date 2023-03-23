@@ -1,36 +1,3 @@
-.about__container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;   
-}
-
-.about__me {
-    width: 100%;
-    border-radius: 1rem;
-    /* background: var(--color-grey); */
-    display: grid;
-    place-items: center;
-    transition: var(--transition);
-}
-
-.about-image {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-.about__me-image {
-    width: 100%;
-    height: fit-content;
-    border-radius: 1rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
-}
-
-.about__me-image:hover {
-    transform: rotate(0);
-}
 
 .about__cards {
     display: grid;
@@ -39,17 +6,15 @@
 }
 
 .about__card {
-    background: var(--color-grey);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: var(--transition);
+    border: 2px solid var(--color-blue);
 }
 
 /* add animation mb?*/
 .about__card:hover{
     cursor: default;
-    background-color: black;
     animation: slide-white ease-in 100s infinite;
     animation-fill-mode: backwards;
 }
@@ -63,10 +28,8 @@
 
 
 .about__card:hover .about__icon {
-   /*  color: var(--color-white); */
     transform: scale(1.5);
-    /* animation: icon-anim 2s alternate-reverse infinite;
-    animation-fill-mode: backwards; */
+    color: white;
 }
 
 @keyframes icon-anim {
@@ -86,39 +49,40 @@
     
 }
 
-.about__card:hover small {
+.about__card:hover h4 {
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: .5s;
 }
 
-.about__card:hover h5 {
+.about__card:hover h2 {
     color: var(--color-light);
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: .5s;
 }
 
 .about__icon {
     color: var(--color-yellow);
-    font-size: 2rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     transition: .5s;
 }
 
-.about__card h5 {
-    font-size: 0.95rem;
+.about__card h2 {
     transition: .1s;
 }
 
-.about__card small {
-    font-size: 0.7rem;
+.about__card h4 {
+    font-size: 1.2rem;
     color: var(--color-light);
     transition: .1s;
 }
 
 .about__content p {
-    margin: 2rem 0 1rem;
-    color: var(--color-light);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.5rem;
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) IPADS */

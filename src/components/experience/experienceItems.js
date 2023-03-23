@@ -3,6 +3,7 @@ import { DiCss3, DiJqueryLogo } from 'react-icons/di'
 import { SiJavascript, SiBootstrap, SiReact, SiAngular, SiPostgresql, SiExpress, SiGoland, SiPython } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { BsWordpress } from 'react-icons/bs'
+import { FaPhp } from 'react-icons/fa'
 
 
 const experienceItems = [
@@ -61,6 +62,11 @@ const experienceItems = [
         lang: 'Express JS',
         desc: 'Framework',
         icon: SiExpress
+      },
+      {
+        lang: 'PHP',
+        desc: 'Language',
+        icon: FaPhp
       },
       {
         lang: 'GOLANG',

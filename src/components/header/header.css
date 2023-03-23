@@ -1,0 +1,300 @@
+header {
+    height: 1080px;
+    overflow: hidden;
+}
+
+
+.vk-face-image {
+    position: fixed;
+    z-index: -1;
+    background-size: cover;
+    margin: 20px;
+    /* bottom: -150px; */
+    /* margin: auto 0; */
+}
+
+.vk-img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.intro__container {
+    height: 8rem;
+    padding: 1rem;
+
+}
+
+.cta-container {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.talk-button,
+.dl-button {
+    width: max-content;
+    color: var(--color-white);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.talk-button:hover,
+.dl-button:hover {
+    border-color: var(--color-green);
+}
+
+.talk-button:active,
+.dl-button:active {
+    transform: scale(0.9);
+}
+
+.talk-button {
+    border: 2px solid var(--color-yellow);
+    font-size: 1.5rem;
+}
+
+.talk-button:after {
+    content: 'Hello!';
+    white-space: pre;
+    position: absolute;
+    opacity: 0;
+    font-size: 1rem;
+}
+
+.talk-button:hover:after {
+    opacity: 1;
+    color: var(--color-violet);
+    animation: talk-btn-animation-text 2s linear infinite;
+}
+
+@keyframes talk-btn-animation-text {
+    0% {
+        opacity: 0.1;
+        transform: translateY(-100%) translateX(3rem) rotate(90deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(300%) translateX(3rem) rotate(-90deg);
+        opacity: 0.1;
+    }
+}
+
+.scroll__down {
+    position: fixed;
+    right: 8rem;
+    bottom: 16rem;
+    transform: rotate(90deg);
+    font-size: 0.9rem;
+    color: var(--color-white);
+}
+
+.scroll__down:hover {
+    color: var(--color-green);
+    font-weight: bolder;
+}
+
+.scroll-down-animation {
+    animation: start-small .1s, blink-animation 1s linear infinite, rotate-90deg 5s ease-in infinite, scale-pulse 1s;
+    animation-delay: 1s, 3s, 3s, 2.5s;
+    animation-fill-mode: backwards, backwards, both;
+}
+
+@keyframes blink-animation {
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate-90deg {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 16rem;
+}
+
+.header__socials a {
+    color: var(--color-white);
+    font-size: larger;
+    transition: .2s;
+}
+
+.header__socials a:hover {
+    transform: scale(1.5);
+}
+
+/* Line */
+.header__socials::after {
+    content: "";
+    width: 3px;
+    height: 2rem;
+    background: var(--color-green);
+    animation: move-up-animation 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes move-up-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(1000%);
+    }
+}
+
+.hello-animation {
+    animation: hello-animation-1 1s, change-color-to-light 1s;
+    animation-delay: 0s, 2s;
+    animation-fill-mode: backwards, forwards;
+}
+
+@keyframes hello-animation-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) rotateX(-180deg);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.name-animation {
+    animation: name-animation-2 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes name-animation-2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%) rotateX(180deg);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.greeting-animation {
+    animation: greeting-animation-3 1s, change-color-to-light 1s;
+    animation-delay: 0s, 2s;
+    animation-fill-mode: backwards, forwards;
+}
+
+@keyframes greeting-animation-3 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.code-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: code-animation-3 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes code-animation-3 {
+    0% {
+        transform: rotateZ(2160deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+/* React Typical */
+.styles_typicalWrapper__1_Uvh::after {
+    content: "" !important;
+    /* Cursor Removed */
+    animation: none;
+    /* Animation removed */
+}
+
+
+.talk-btn-animation {
+    animation: talk-btn-animation-6 1s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes talk-btn-animation-6 {
+    0% {
+        opacity: 0;
+        transform: translateX(100%) rotateY(720deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.socials-animation {
+    animation: socials-animation-7 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+
+}
+
+@keyframes socials-animation-7 {
+    0% {
+        opacity: 0;
+        transform: scale(-1);
+    }
+
+    50% {
+        transform: scale(2);
+        color: var(--color-primary);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
