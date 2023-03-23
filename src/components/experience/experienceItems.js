@@ -1,6 +1,6 @@
 import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
-import { DiCss3, DiJqueryLogo } from 'react-icons/di'
-import { SiJavascript, SiBootstrap, SiReact, SiAngular, SiPostgresql, SiExpress, SiGoland, SiPython } from 'react-icons/si'
+import { DiCss3, DiJqueryLogo, DiLinux } from 'react-icons/di'
+import { SiJavascript, SiGithub, SiBootstrap, SiReact, SiAngular, SiPostgresql, SiExpress, SiGoland, SiPython } from 'react-icons/si'
 import { IoLogoNodejs } from 'react-icons/io'
 import { BsWordpress } from 'react-icons/bs'
 import { FaPhp } from 'react-icons/fa'
@@ -77,6 +77,16 @@ const experienceItems = [
         lang: 'Python',
         desc: 'Language',
         icon: SiPython
+      },
+      {
+        lang: 'Linux',
+        desc: 'Operating system',
+        icon: DiLinux
+      },
+      {
+        lang: 'GIT',
+        desc: 'Version control',
+        icon: SiGithub
       },
       {
         lang: 'Wordpress',

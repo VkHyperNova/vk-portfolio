@@ -3,6 +3,8 @@ import './nav.css'
 import { Link } from 'react-scroll'
 import navItems from './navItems'
 
+
+
 const Nav = () => {
   return (
     <nav>

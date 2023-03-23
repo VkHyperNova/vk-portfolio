@@ -13,6 +13,8 @@
     list-style: none;
     text-decoration: none;
     font-family:"Times New Roman", Times, serif; 
+    color: var(--color-white);
+    line-height: 1.7;
 }
 
 :root {
@@ -32,14 +34,26 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-white);
-    line-height: 1.7;
-    background-attachment: fixed;
-    background-image: url(../src/assets/vkbg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    
+    background-attachment: fixed, fixed;
+    background-image: url(../src/assets/VK-face.png), url(../src/assets/vkbg.jpg);
+    background-size: cover, cover;
+    background-position: center, center;
+    background-blend-mode: normal;
+
+    animation: face-animation 1s;
+    animation-delay: 2.2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in;
+   
+}
+
+@keyframes face-animation {
+    0% {
+        
+        background-blend-mode: darken;
+        
+    }  
 }
 
 section {

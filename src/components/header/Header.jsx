@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactTooltip from 'react-tooltip'
 import socialsIcons from './headerSocialsItems'
-import VKFACE from '../../assets/VK-face.png'
 import Typical from 'react-typical'
 import './header.css'
 
@@ -9,9 +8,6 @@ const Header = () => {
   return (
     <section id="home">
       <header>
-        <div className="vk-face-image">
-          <img className='vk-img-fluid' src={VKFACE} alt="VK FACE" />
-        </div>
         <div className="container header__container">
           <div className='intro__container'>
             <h4 className="hello-animation">Hello, I am</h4>
@@ -21,7 +17,7 @@ const Header = () => {
           <div className="cta-container">
             <a href="#contact" className='talk-button talk-btn-animation'>Let's Talk</a>
           </div>
-          <Typical loop={1} wrapper="h1" className='code-animation' steps={['+', 2000, '11001110101100', 1000]} />
+          {/* <Typical loop={1} wrapper="h1" className='code-animation' steps={['+', 2000, '11001110101100', 1000]} /> */}
 
           <div className="header__socials">
             {

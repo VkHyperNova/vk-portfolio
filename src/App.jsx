@@ -9,12 +9,15 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 // import P5snow from './p5snow'
+import ChangeFace from './scroll'
+
+
 
 
 const App = () => {
   return (       
     <>
-    {/* <P5snow/> */}
+    <ChangeFace/>
     <Header />
     <Nav />
     <About />
