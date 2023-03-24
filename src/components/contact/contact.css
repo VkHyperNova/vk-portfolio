@@ -1,8 +1,5 @@
 .container.contact__container {
     width: 30%;
-    /* display: grid;
-    grid-template-columns: 30% 58%; */
-    /* gap: 12%; */
 }
 
 .contact__options {
@@ -49,9 +46,12 @@ textarea {
     border-radius: 0.5rem;
     resize: none;
     color: var(--color-white);
-    background: transparent;
     border: 2px solid var(--color-blue);
     font-size: 1rem;
+    background-image: url(../../assets/text-area.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
 }
 
 input:hover,
@@ -78,10 +78,14 @@ textarea:hover {
     color: var(--color-white);
     transition: .2s;
     font-size: 1rem;
+    background-image: url(../../assets/btn.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .btn:hover {
     border-color: var(--color-green);
+    background-color: black;
 }
 
 .btn:active {

@@ -23,6 +23,7 @@ const Services = () => {
                         <li key={index}>
                           <BsPatchCheckFill className='service__list-icon' />
                           <p>{item}</p>
+                          
                         </li>
                     )
                   })

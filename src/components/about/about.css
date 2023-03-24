@@ -10,6 +10,9 @@
     padding: 2rem;
     text-align: center;
     border: 2px solid var(--color-blue);
+    background-image: url(../../assets/test2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* add animation mb?*/

@@ -8,27 +8,6 @@
 .service {
     border-radius: 0 0 2rem 2rem;
     height: 400px;  
-    transition: var(--transition);
-    border: 2px solid var(--color-blue);
-}
-
-
-
-.service:hover {
-    transform: scale(1.1);
-    border: 2px solid var(--color-yellow);
-}
-
-.service:hover p {
-    color: var(--color-white);
-}
-
-.service p:hover {
-    font-weight: 900;
-}
-.service:hover h3 {
-    color: var(--color-green);
-    font-weight: 900;
 }
 
 .service__head {
@@ -38,6 +17,7 @@
 
 .service__head h3 {
     color: var(--color-white);
+    font-weight: 900;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -49,20 +29,19 @@
 
 .service__list li {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 6% 94%;
     padding-bottom: 1rem;
 }
 
 .service__list-icon {
     color: var(--color-green);
-    margin-top: 2px;
-    font-size: 2rem;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 .service__list p {
-    color: var(--color-light);
+    color: var(--color-white);
     font-size: 1.4rem;
-    transition: .1s;
 }
 
 

@@ -14,7 +14,7 @@ const ChangeFace = () => {
             document.body.style = 'background-blend-mode: overlay;';
             
         } else {
-            document.body.style = 'background-blend-mode: normal;';
+            document.body.style = 'background-blend-mode: lighten;';
         }
       }
 

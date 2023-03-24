@@ -12,8 +12,7 @@
     box-sizing: 0;
     list-style: none;
     text-decoration: none;
-    font-family:"Times New Roman", Times, serif; 
-    color: var(--color-white);
+    font-family: "Times New Roman", Times, serif;
     line-height: 1.7;
 }
 
@@ -24,7 +23,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-yellow: #e4c021;
-    
+
 
     --transition: all 400ms ease;
 
@@ -34,27 +33,27 @@
 }
 
 body {
-    
+    color: var(--color-white);
+
     background-attachment: fixed, fixed;
-    background-image: url(../src/assets/VK-face.png), url(../src/assets/vkbg.jpg);
+    background-image: url(./assets/VK-face.png), url(./assets/background.jpeg);
     background-size: cover, cover;
     background-position: center, center;
-    background-blend-mode: normal;
-
-    animation: face-animation 1s;
-    animation-delay: 2.2s;
-    animation-fill-mode: backwards;
-    animation-timing-function: ease-in;
-   
+    /* animation: moving-background 10s linear infinite; */
 }
 
-@keyframes face-animation {
+
+@keyframes moving-background {
     0% {
-        
-        background-blend-mode: darken;
-        
-    }  
+        background-position: center, 0 0;
+    }
+
+    100% {
+        background-position: center,  100% 0;
+    }
 }
+
+
 
 section {
     margin-top: 3rem;
@@ -127,6 +126,7 @@ section>h2 {
     .vk-face-image {
         bottom: 300px;
     }
+
     .container {
         width: var(--container-width-sm);
     }
