@@ -232,31 +232,6 @@ header {
     }
 }
 
-/*******************************************************************************************************************/
-
-.code-animation {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: code-animation-3 4s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes code-animation-3 {
-    0% {
-        transform: rotateZ(2160deg);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-
-    }
-}
 
 /*******************************************************************************************************************/
 
@@ -272,7 +247,7 @@ header {
 
 .talk-btn-animation {
     animation: talk-btn-animation-6 1s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
@@ -292,7 +267,7 @@ header {
 
 .socials-animation {
     animation: socials-animation-7 1s;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
     animation-fill-mode: backwards;
 
 }
@@ -305,7 +280,7 @@ header {
 
     50% {
         transform: scale(2);
-        color: var(--color-primary);
+        color: var(--color-green);
     }
 
     100% {

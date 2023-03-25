@@ -132,6 +132,12 @@ section>h2 {
     background-color: rgba(7, 136, 223, 0.507);
 }
 
+.pattern-bg {
+    background-image: url(./assets/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 

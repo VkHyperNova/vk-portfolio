@@ -6,12 +6,11 @@
 
 .service {
     border-radius: 0 0 2rem 2rem;
-    height: 400px;  
+    min-height: 400px;
+    min-width: 300px;  
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-    background-image: url(../../assets/contact-bg.jpg);
-    background-position: center;
-    background-size: cover;
+   
     /* box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;  */
 }
 
@@ -36,7 +35,7 @@
 
 .service__list li {
     display: grid;
-    grid-template-columns: 6% 94%;
+    grid-template-columns: 10% 80%;
     padding-bottom: 1rem;
 }
 
