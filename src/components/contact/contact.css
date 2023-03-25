@@ -9,16 +9,9 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    transition: var(--transition);
-}
-
-.contact__option:hover {
-    background: var(--color-bg-variant-reverse);
-
 }
 
 .contact__option-icon {
@@ -48,15 +41,17 @@ textarea {
     color: var(--color-white);
     border: 2px solid var(--color-blue);
     font-size: 1rem;
-    background-image: url(../../assets/text-area.jpg);
+    background-image: url(../../assets/contact-bg.jpg);
     background-position: center;
     background-size: cover;
     opacity: 0.8;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;
 }
 
 input:hover,
 textarea:hover {
     border: 2px solid var(--color-green);
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
 }
 
 ::placeholder {
@@ -65,32 +60,7 @@ textarea:hover {
 }
 
 /* Send msg button only */
-.btn {
-    width: max-content;
-    color: var(--color-green);
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
-    border: 2px solid var(--color-blue);
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    background-color: transparent;
-    color: var(--color-white);
-    transition: .2s;
-    font-size: 1rem;
-    background-image: url(../../assets/btn.jpg);
-    background-position: center;
-    background-size: cover;
-}
 
-.btn:hover {
-    border-color: var(--color-green);
-    background-color: black;
-}
-
-.btn:active {
-    transform: translateY(2px);
-}
 
 
 

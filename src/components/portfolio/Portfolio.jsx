@@ -20,8 +20,8 @@ const Portfolio = () => {
                 <p>{comment}</p>
                 
                 <div className="portfolio__item-cta">
-                  <a href={github} target='_blank' rel="noopener noreferrer" className='btn btn-primary'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">View Page</a>
+                  <a href={github} target='_blank' rel="noopener noreferrer" className='btn blue-bg'>Github</a>
+                  <a href={demo} className='btn green-bg' target='_blank' rel="noopener noreferrer">View Page</a>
                 </div>
               </article>
             )
